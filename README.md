@@ -15,12 +15,15 @@ A free, fast static site for GitHub Pages: one scrolling home page plus separate
 
 ## Before you publish
 
-1. **Contact details:** open `site.js` and edit the `SITE` block at the top (email, phone, LinkedIn, form address). It updates every page.
+Already done: business name (QStead Group), email, phone, and the site address in the JSON-LD block.
+
+Still to do:
+
+1. **LinkedIn:** open `site.js` and replace `https://www.linkedin.com/in/YOUR-PROFILE` in the `SITE` block with your real profile link. It updates every page.
 2. **Your bio:** in the About section of `index.html`, replace the bracketed text with your real background and credentials. Only claim credentials, experience, and services you can substantiate.
-3. **Business name:** the site uses the placeholder "Your Company". Find and replace it in every `.html` file, or ask Claude to rebuild the files with your final name.
-4. **Check the wording:** the "Why work with me", pricing, and FAQ answers are general statements. Edit anything that does not match how you actually work.
-5. **Structured data:** in `index.html`, replace `https://YOUR-ORG.github.io/` in the JSON-LD block with your real address.
-6. **Blog article and privacy policy:** read both and adjust them to your practice. The privacy policy is a plain-language starting point, not legal advice. Consider having it reviewed.
+3. **Check the wording:** the "Why work with me", pricing, and FAQ answers are general statements. Edit anything that does not match how you actually work.
+4. **Blog article and privacy policy:** read both and adjust them to your practice. The privacy policy is a plain-language starting point, not legal advice. Consider having it reviewed.
+5. **Contact form:** see "Make the contact form work" below to connect Formspree; until then it opens an email draft instead.
 
 ## Deploy on GitHub Pages (free)
 

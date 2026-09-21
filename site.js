@@ -2,9 +2,9 @@
 // EDIT THIS BLOCK: your contact details appear across all pages.
 // ============================================================
 const SITE = {
-  email: "YOUR-EMAIL@example.com",
-  phone: "(XXX) XXX-XXXX",
-  phoneLink: "+1XXXXXXXXXX", // digits only, with country code
+  email: "jefferydlow@yahoo.com",
+  phone: "(619) 718-1853",
+  phoneLink: "+16197181853", // digits only, with country code
   linkedin: "https://www.linkedin.com/in/YOUR-PROFILE",
   formAction: "https://formspree.io/f/FORM-ID", // from formspree.io (see README)
 };
