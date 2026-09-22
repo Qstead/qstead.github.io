@@ -10,6 +10,8 @@ A free, fast static site for GitHub Pages: one scrolling home page plus separate
 | `blog.html` + `blog-capa-effectiveness.html` | Blog list and one starter article |
 | `privacy.html` | Basic privacy policy |
 | `404.html` | Page-not-found page |
+| `training.html`, `education.html`, `resources.html` | "Coming soon" pages linked from the Learning Center dropdown in the nav |
+| `logo.png` | Your logo, shown in the header |
 | `site.js` | **Your contact details live here** (edit the top block) |
 | `styles.css` | All design and colors |
 
@@ -23,6 +25,7 @@ Still to do:
 2. **Check the wording:** the "Why work with me", pricing, and FAQ answers are general statements. Edit anything that does not match how you actually work.
 3. **Blog article and privacy policy:** read both and adjust them to your practice. The privacy policy is a plain-language starting point, not legal advice. Consider having it reviewed.
 4. **Contact form:** see "Make the contact form work" below to connect Formspree; until then it opens an email draft instead.
+5. **Learning Center pages:** `training.html`, `education.html`, and `resources.html` are placeholder "coming soon" pages linked from the nav dropdown. Replace their content with real material whenever it's ready, or remove the dropdown from each page's `<ul id="menu">` if you'd rather hide it until then.
 
 ## Deploy on GitHub Pages (free)
 
