@@ -2,7 +2,7 @@
 // EDIT THIS BLOCK: your contact details appear across all pages.
 // ============================================================
 const SITE = {
-  email: "jefferydlow@yahoo.com",
+  email: "qsteadgroup@yahoo.com",
   phone: "(619) 718-1853",
   phoneLink: "+16197181853", // digits only, with country code
   formAction: "https://formspree.io/f/FORM-ID", // from formspree.io (see README)
@@ -16,9 +16,6 @@ document.querySelectorAll('[data-site="email"]').forEach((el) => {
 document.querySelectorAll('[data-site="phone"]').forEach((el) => {
   el.textContent = SITE.phone;
   el.href = "tel:" + SITE.phoneLink;
-});
-document.querySelectorAll('[data-site="linkedin"]').forEach((el) => {
-  el.href = SITE.linkedin;
 });
 document.querySelectorAll('[data-site="year"]').forEach((el) => {
   el.textContent = new Date().getFullYear();

@@ -19,11 +19,10 @@ Already done: business name (QStead Group), email, phone, and the site address i
 
 Still to do:
 
-1. **LinkedIn:** open `site.js` and replace `https://www.linkedin.com/in/YOUR-PROFILE` in the `SITE` block with your real profile link. It updates every page.
-2. **Your bio:** in the About section of `index.html`, replace the bracketed text with your real background and credentials. Only claim credentials, experience, and services you can substantiate.
-3. **Check the wording:** the "Why work with me", pricing, and FAQ answers are general statements. Edit anything that does not match how you actually work.
-4. **Blog article and privacy policy:** read both and adjust them to your practice. The privacy policy is a plain-language starting point, not legal advice. Consider having it reviewed.
-5. **Contact form:** see "Make the contact form work" below to connect Formspree; until then it opens an email draft instead.
+1. **Your bio:** in the About section of `index.html`, replace the bracketed text with your real background and credentials. Only claim credentials, experience, and services you can substantiate.
+2. **Check the wording:** the "Why work with me", pricing, and FAQ answers are general statements. Edit anything that does not match how you actually work.
+3. **Blog article and privacy policy:** read both and adjust them to your practice. The privacy policy is a plain-language starting point, not legal advice. Consider having it reviewed.
+4. **Contact form:** see "Make the contact form work" below to connect Formspree; until then it opens an email draft instead.
 
 ## Deploy on GitHub Pages (free)
 
@@ -59,5 +58,5 @@ Until you do, the form opens the visitor's email app with a pre-filled message t
 
 - Create a Google Business Profile for the business.
 - Add your live URL to Google Search Console and submit it.
-- Link to the site from LinkedIn and your email signature.
+- Link to the site from your email signature and any professional profiles you use.
 - Publish a blog post every month or two on topics your clients search for.
