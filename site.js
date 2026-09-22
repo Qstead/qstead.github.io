@@ -73,3 +73,25 @@ if (form) {
     window.location.href = `mailto:${SITE.email}?subject=${encodeURIComponent("Website inquiry")}&body=${encodeURIComponent(body)}`;
   });
 }
+
+// ---- Resources page: live search over agency cards ----
+const agencySearch = document.querySelector(".agency-search");
+if (agencySearch) {
+  const sections = Array.from(document.querySelectorAll(".agency-section"));
+  const noResults = document.querySelector(".no-results");
+  agencySearch.addEventListener("input", () => {
+    const q = agencySearch.value.trim().toLowerCase();
+    let anyVisible = false;
+    sections.forEach((section) => {
+      let sectionHasVisible = false;
+      section.querySelectorAll(".agency-card").forEach((card) => {
+        const match = !q || (card.dataset.search || "").includes(q);
+        card.style.display = match ? "" : "none";
+        if (match) sectionHasVisible = true;
+      });
+      section.style.display = sectionHasVisible ? "" : "none";
+      if (sectionHasVisible) anyVisible = true;
+    });
+    if (noResults) noResults.style.display = anyVisible ? "none" : "block";
+  });
+}

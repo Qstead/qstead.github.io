@@ -182,3 +182,24 @@ textarea { min-height: 130px; resize: vertical; }
 .faq details[open] summary::after { content: "\2212"; }
 .faq details p { margin: 0 0 18px; color: var(--muted); }
 section[id] { scroll-margin-top: 76px; }
+
+/* Regulatory reference (Resources page) */
+.agency-search-wrap { max-width: 560px; margin: 0 auto; }
+.agency-search { width: 100%; padding: 15px 20px; border-radius: 999px; border: 1px solid var(--line); font-size: 1rem; font-family: inherit; box-shadow: var(--shadow); }
+.quick-nav-wrap { position: sticky; top: 68px; z-index: 40; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); padding: 14px 0; }
+.quick-nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.quick-nav a { padding: 7px 16px; border-radius: 999px; border: 1px solid var(--line); font-size: .85rem; font-weight: 600; color: var(--navy); text-decoration: none; white-space: nowrap; }
+.quick-nav a:hover { border-color: var(--teal); color: var(--teal-dark); background: var(--sand); }
+.agency-section-head { text-align: center; max-width: 640px; margin: 0 auto 8px; }
+.agency-grid { margin-top: 24px; }
+.agency-card { text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: 8px; transition: transform .12s ease, box-shadow .12s ease; }
+.agency-card:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(15,42,67,.14); }
+.agency-top { display: flex; align-items: center; justify-content: space-between; }
+.agency-flag { font-size: 1.7rem; line-height: 1; }
+.chip { background: var(--sand); color: var(--teal-dark); font-weight: 700; font-size: .76rem; letter-spacing: .03em; padding: 4px 11px; border-radius: 999px; }
+.agency-card h3 { margin: 0; font-size: 1.05rem; }
+.agency-region { color: var(--muted); font-size: .8rem; margin: 0; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+.agency-card p:not(.agency-region) { color: var(--ink); font-size: .92rem; margin: 0; }
+.agency-visit { margin-top: auto; padding-top: 6px; color: var(--teal-dark); font-weight: 600; font-size: .86rem; }
+.no-results { display: none; text-align: center; color: var(--muted); padding: 50px 0; }
+@media (max-width: 720px) { .quick-nav-wrap { top: 0; } }
