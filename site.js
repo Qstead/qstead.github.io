@@ -5,7 +5,6 @@ const SITE = {
   email: "jefferydlow@yahoo.com",
   phone: "(619) 718-1853",
   phoneLink: "+16197181853", // digits only, with country code
-  linkedin: "https://www.linkedin.com",
   formAction: "https://formspree.io/f/FORM-ID", // from formspree.io (see README)
 };
 
