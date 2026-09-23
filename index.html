@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:wght@600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260922c">
+  <link rel="stylesheet" href="styles.css?v=20260925">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -51,7 +51,14 @@
           <ul class="dropdown">
             <li><a href="training.html">Training</a></li>
             <li><a href="education.html">Education</a></li>
-            <li><a href="resources.html">Resources</a></li>
+            <li class="has-subdropdown">
+              <a href="resources.html" class="subdropdown-label">Resources <span class="subdropdown-caret" aria-hidden="true">&lsaquo;</span></a>
+              <ul class="subdropdown">
+                <li><a href="resources-agencies.html">Global Regulatory Agencies &amp; Standards</a></li>
+                <li><a href="resources-legal-sources.html">U.S. Legal &amp; Legislative Sources</a></li>
+                <li><a href="resources-staying-current.html">Staying Current: Alerts &amp; Update Guide</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a class="btn btn-primary btn-sm" href="index.html#contact">Contact</a></li>

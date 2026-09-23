@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:wght@600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260924">
+  <link rel="stylesheet" href="styles.css?v=20260925">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -41,7 +41,14 @@
           <ul class="dropdown">
             <li><a href="training.html">Training</a></li>
             <li><a href="education.html">Education</a></li>
-            <li><a href="resources.html" aria-current="page">Resources</a></li>
+            <li class="has-subdropdown">
+              <a href="resources.html" class="subdropdown-label" aria-current="page">Resources <span class="subdropdown-caret" aria-hidden="true">&lsaquo;</span></a>
+              <ul class="subdropdown">
+                <li><a href="resources-agencies.html">Global Regulatory Agencies &amp; Standards</a></li>
+                <li><a href="resources-legal-sources.html">U.S. Legal &amp; Legislative Sources</a></li>
+                <li><a href="resources-staying-current.html">Staying Current: Alerts &amp; Update Guide</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a class="btn btn-primary btn-sm" href="index.html#contact">Contact</a></li>
@@ -60,7 +67,7 @@
 
     <section class="section">
       <div class="container">
-        <div class="grid grid-2">
+        <div class="grid grid-3">
           <a class="card post-card" href="resources-agencies.html">
             <p class="post-meta">43 agencies &middot; Searchable reference</p>
             <h3>Global Regulatory Agencies &amp; Standards</h3>
@@ -71,8 +78,13 @@
             <h3>U.S. Legal &amp; Legislative Sources</h3>
             <p>The U.S. Code, the eCFR, and the Federal Register &mdash; the actual statute and regulatory text behind FDA authority &mdash; plus Cornell Law's searchable versions of the Code and CFR.</p>
           </a>
+          <a class="card post-card" href="resources-staying-current.html">
+            <p class="post-meta">12 sources &middot; Practical guide</p>
+            <h3>Staying Current: Alerts &amp; Update Guide</h3>
+            <p>Which agencies actually offer email or RSS alerts, how to sign up for each, and how often to manually check the ones that don't.</p>
+          </a>
         </div>
-        <p class="form-note" style="margin-top:28px">More categories, including a practical guide to tracking regulatory updates, are in development. Have a suggestion? Email <a data-site="email" href="mailto:qsteadgroup@yahoo.com">qsteadgroup@yahoo.com</a>.</p>
+        <p class="form-note" style="margin-top:28px">Have a suggestion for another category? Email <a data-site="email" href="mailto:qsteadgroup@yahoo.com">qsteadgroup@yahoo.com</a>.</p>
       </div>
     </section>
 
