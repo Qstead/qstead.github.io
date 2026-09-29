@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Standard That Failed the Samples | QStead Group</title>
+  <meta name="description" content="An illustrative CAPA case study: an SDS-PAGE degradation OOS caused by a weak reference standard, with the reasoning behind each root cause analysis tool used.">
+  <meta name="theme-color" content="#0f2a43">
+  <meta property="og:title" content="The Standard That Failed the Samples | QStead Group">
+  <meta property="og:description" content="An illustrative CAPA case study: an SDS-PAGE degradation OOS caused by a weak reference standard, with the reasoning behind each root cause analysis tool used.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260930">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="container">
+      <a data-site="email" href="mailto:qsteadgroup@yahoo.com">qsteadgroup@yahoo.com</a>
+      <a data-site="phone" href="tel:+16197181853">(619) 718-1853</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="QStead Group home">
+        <img class="brand-mark" src="logo.png?v=20260922" alt="QStead Group">
+      </a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul id="menu">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#why">Why me</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="case-studies.html" aria-current="page">Case Studies</a></li>
+        <li class="has-dropdown">
+          <span class="dropdown-label">Learning Center</span>
+          <ul class="dropdown">
+            <li><a href="training.html">Training</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li class="has-subdropdown">
+              <a href="resources.html" class="subdropdown-label">Resources <span class="subdropdown-caret" aria-hidden="true">&lsaquo;</span></a>
+              <ul class="subdropdown">
+                <li><a href="resources-agencies.html">Global Regulatory Agencies &amp; Standards</a></li>
+                <li><a href="resources-legal-sources.html">U.S. Legal &amp; Legislative Sources</a></li>
+                <li><a href="resources-staying-current.html">Staying Current: Alerts &amp; Update Guide</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a class="btn btn-primary btn-sm" href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow" style="color:#7fd6d6">Case Study &middot; CAPA &amp; Laboratory Investigations</p>
+        <h1>The Standard That Failed the Samples</h1>
+        <p>An SDS-PAGE degradation OOS caused by a weak reference standard, and how each root cause analysis tool was chosen along the way.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <article class="prose">
+          <p class="cs-note"><strong>Illustrative teaching case.</strong> This is a composite case inspired by real laboratory investigation experience. Product and numerical details have been changed, and the investigation is presented as a model of good practice. It does not describe any specific company, product, or event. All data are illustrative.</p>
+
+          <h2>At a glance</h2>
+          <div class="table-wrap"><table class="cs-table"><tbody><tr><th scope="row">Product / test</th><td>SDS-PAGE identity and degradation test for a therapeutic protein, quantified by densitometry</td></tr><tr><th scope="row">Specification</th><td>Degradation &lt; 5%</td></tr><tr><th scope="row">The problem</th><td>Two lots read 6–9% degradation, although the gel looked normal by eye</td></tr><tr><th scope="row">Root cause</th><td>A deteriorated degraded standard ran lighter than normal. Because the method sets scan sensitivity for the whole gel against that standard, every sample lane was magnified.</td></tr><tr><th scope="row">Why it wasn’t caught</th><td>The standard’s preparation date wasn’t recorded, so its 30-day expiry couldn’t be verified or enforced</td></tr><tr><th scope="row">How it was proven</th><td>Retest of the same samples under a pre-approved protocol, with the old and a new standard side by side</td></tr><tr><th scope="row">Outcome</th><td>Assignable cause documented; OOS invalidated with QA approval; lots released; SOP revised; CAPA effective</td></tr></tbody></table></div>
+          <h2>How the test works</h2>
+          <p>Each gel has ten lanes: a molecular-weight (MW) standard, a positive control, a negative control, a blank, and two sample lots in triplicate. A <strong>degraded standard</strong>, a protein sample with a known amount of breakdown, serves as the system suitability check.</p>
+          <p>After staining, the gel is scanned on a calibrated densitometer. Per the validated SOP, the analyst raises the scan sensitivity <strong>for the whole gel</strong> until the degraded standard shows at least 5% degradation, but stops before the negative control shows any. Software then calculates degradation in each sample lane. The key point: <strong>the sensitivity setting applies to every lane at once.</strong></p>
+
+          <h2>1. The signal</h2>
+          <p>On a routine release gel, both sample lots read between <strong>6.1% and 8.8%</strong> degradation across their triplicate lanes: out of specification. Yet when the analyst and reviewer looked at the gel itself, the sample lanes looked like every passing gel before them: a strong main band and only faint minor bands.</p>
+          <aside class="cs-tool" aria-label="Tool decision: First look">
+            <p class="cs-tool-label">Tool decision &middot; First look</p>
+            <dl><dt>Situation</dt><dd>OOS results from the software, but the gel looks normal.</dd><dt>Tool chosen</dt><dd>Visual review of the gel alongside the calculated results.</dd><dt>Why</dt><dd>A quick check of whether the picture and the number agree before doing anything else.</dd><dt>Pros</dt><dd>Fast and free. It exposed the key contradiction: normal-looking lanes, high numbers.</dd><dt>Cons / limits</dt><dd>Subjective. It can’t overrule a validated quantitative result, only raise questions.</dd><dt>Also considered</dt><dd>An immediate retest. Rejected: without a hypothesis, a retest risks “testing into compliance.”</dd></dl>
+          </aside>
+          <h2>2. Contain and define</h2>
+          <ul>
+            <li><strong>Contain.</strong> Both lots placed on hold; QA notified the same day under the OOS procedure.</li>
+            <li><strong>Preserve evidence.</strong> The gel image, the scan file with its settings, retained sample portions, and the degraded standard vial in use were kept and labeled.</li>
+            <li><strong>Define.</strong> The team wrote a problem statement and an Is / Is-Not.</li>
+          </ul>
+          <div class="table-wrap"><table class="cs-table"><thead><tr><th></th><th>Is</th><th>Is not</th><th>What it suggests</th></tr></thead><tbody><tr><th scope="row">What</th><td>High degradation by software (6–9%)</td><td>Visible extra degradation by eye</td><td>The number, not the protein, may be the problem</td></tr><tr><th scope="row">Where</th><td>All six sample lanes, both lots</td><td>One lane or one lot only</td><td>Something acting on the whole gel</td></tr><tr><th scope="row">Which control</th><td>Degraded standard lighter than normal</td><td>MW standard, positive and negative controls, blank</td><td>The standard is the odd one out</td></tr><tr><th scope="row">When</th><td>This gel</td><td>Previous gels (normal results)</td><td>Something changed recently</td></tr></tbody></table></div>
+          <aside class="cs-tool" aria-label="Tool decision: Define the problem">
+            <p class="cs-tool-label">Tool decision &middot; Define the problem</p>
+            <dl><dt>Situation</dt><dd>Contradictory evidence: normal gel, failing numbers.</dd><dt>Tool chosen</dt><dd>Kepner-Tregoe Is / Is-Not.</dd><dt>Why</dt><dd>Maps where the problem is and isn’t, so the pattern points to the cause.</dd><dt>Pros</dt><dd>Showed the failure affected every sample lane, and that only one control lane was abnormal.</dd><dt>Cons / limits</dt><dd>Organizes facts; doesn’t prove anything by itself.</dd><dt>Also considered</dt><dd>A fishbone diagram. Useful as a checklist, but too broad once the pattern pointed to the standard.</dd></dl>
+          </aside>
+          <h2>3. Was the run valid?</h2>
+          <p>The first question in any OOS is whether the test itself worked. The MW standard separated normally, the positive control showed its expected band, and the negative control and blank were clean. The degraded standard met the SOP’s suitability window: it reached 5% before the negative control showed any degradation.</p>
+          <p>So the run was <strong>technically valid</strong> under the SOP, and the OOS results couldn’t simply be set aside. The investigation had to find a cause.</p>
+          <aside class="cs-tool" aria-label="Tool decision: Run validity">
+            <p class="cs-tool-label">Tool decision &middot; Run validity</p>
+            <dl><dt>Situation</dt><dd>Controls look normal, but the degraded standard is light.</dd><dt>Tool chosen</dt><dd>System suitability review, lane by lane.</dd><dt>Why</dt><dd>An invalid run is handled differently from an OOS, so this must be settled first.</dd><dt>Pros</dt><dd>Uses data already on the gel; clarified that the results stood until explained.</dd><dt>Cons / limits</dt><dd>A “window” criterion can be met even when the standard is weak, so passing suitability didn’t mean everything was normal.</dd><dt>Also considered</dt><dd>Declaring the run invalid. Rejected: the written criteria were met.</dd></dl>
+          </aside>
+          <h2>4. Finding the mechanism</h2>
+          <p>The software record showed the scan sensitivity used for this gel was <strong>78</strong>, compared with a typical range of <strong>40–55</strong> on recent passing gels. Because the degraded standard was light, the analyst had to raise sensitivity much further than usual to make it show 5%.</p>
+          <p>That explained everything at once. Higher sensitivity magnifies faint signal in <strong>every</strong> lane. The negative control, with nothing to detect, stayed at 0%. But the samples’ small, normal minor bands and background were magnified into 6–9% “degradation.”</p>
+          <div class="cs-callout"><p class="cs-callout-title">Working hypothesis</p><p>A weak degraded standard forced an unusually high gel-wide sensitivity setting, which inflated the degradation results for normal samples.</p></div>
+          <aside class="cs-tool" aria-label="Tool decision: Explain the pattern">
+            <p class="cs-tool-label">Tool decision &middot; Explain the pattern</p>
+            <dl><dt>Situation</dt><dd>The standard is light, and sensitivity is set against it for the whole gel.</dd><dt>Tool chosen</dt><dd>Mechanism analysis: following the method step by step, backed by the software’s record of the sensitivity setting.</dd><dt>Why</dt><dd>A single mechanism that explains every observation is a strong candidate cause.</dd><dt>Pros</dt><dd>Tied all the facts together; the audit trail gave objective evidence of an unusual setting.</dd><dt>Cons / limits</dt><dd>A plausible explanation still needs an experiment to confirm it.</dd><dt>Also considered</dt><dd>Re-analyzing the original scan at a lower sensitivity. Rejected: changing processing settings until results pass looks like testing into compliance.</dd></dl>
+          </aside>
+          <h2>5. Phase I laboratory investigation</h2>
+          <h3>Reagents and gel-wide factors</h3>
+          <p>Stain, destain, buffers, and the gel itself were early suspects. But these act on the <strong>whole gel</strong>, and every other lane looked normal. Only the degraded standard lane was light, which pointed to a <strong>lane-specific</strong> cause: the standard itself, its preparation, or its loading.</p>
+          <aside class="cs-tool" aria-label="Tool decision: Reagents or the standard?">
+            <p class="cs-tool-label">Tool decision &middot; Reagents or the standard?</p>
+            <dl><dt>Situation</dt><dd>One lane abnormal; all others normal.</dd><dt>Tool chosen</dt><dd>Is / Is-Not reasoning on the lane pattern.</dd><dt>Why</dt><dd>Gel-wide causes can’t explain a single weak lane.</dd><dt>Pros</dt><dd>Instant and free; eliminated a whole family of causes (stain, destain, buffer, gel, run conditions).</dd><dt>Cons / limits</dt><dd>Narrows the search but doesn’t prove the cause.</dd><dt>Also considered</dt><dd>Testing each reagent lot. Unnecessary once the pattern ruled out gel-wide causes.</dd></dl>
+          </aside>
+          <h3>Records and SOP review</h3>
+          <ul>
+            <li>Analyst interview: preparation, loading, and staining followed the SOP; nothing unusual noticed except the faint standard.</li>
+            <li>Densitometer: within calibration.</li>
+            <li>SOP: the degraded standard is stored frozen between uses and is good for <strong>30 days</strong>.</li>
+            <li><strong>Gap found:</strong> the standard’s preparation date was <strong>not recorded</strong> anywhere, so its age, and whether it was within its 30-day expiry, couldn’t be determined. The vial had been thawed and refrozen for each use, with no limit on freeze-thaw cycles.</li>
+          </ul>
+          <aside class="cs-tool" aria-label="Tool decision: Why was the standard weak?">
+            <p class="cs-tool-label">Tool decision &middot; Why was the standard weak?</p>
+            <dl><dt>Situation</dt><dd>The standard is the prime suspect; age and handling are likely factors.</dd><dt>Tool chosen</dt><dd>Records and SOP review.</dd><dt>Why</dt><dd>Storage and expiry rules are the fastest thing to check.</dd><dt>Pros</dt><dd>Exposed a system gap: an expiry that couldn’t be verified or enforced.</dd><dt>Cons / limits</dt><dd>Missing records meant age couldn’t be confirmed from paperwork. The question had to be answered by experiment.</dd><dt>Also considered</dt><dd>Change Analysis across standard lots. Limited here, because the standard’s history wasn’t recorded.</dd></dl>
+          </aside>
+          <h2>6. Proving the cause</h2>
+          <p>QA approved a written protocol <strong>before</strong> any retesting. It stated the hypothesis (a weak degraded standard inflated the results), specified a retest of the <strong>same retained samples</strong>, and put the <strong>old standard and a freshly prepared standard on the same gel</strong>. Sensitivity was set per the SOP using the new standard.</p>
+          <div class="table-wrap"><table class="cs-table"><thead><tr><th>Lane</th><th>Result</th><th>What it shows</th></tr></thead><tbody><tr><td>New degraded standard</td><td>Normal intensity; reached 5% at sensitivity 46</td><td>Sensitivity back in the typical range</td></tr><tr><td>Old degraded standard</td><td>Visibly lighter; read only 2.7% at the same setting</td><td>The old standard had lost signal</td></tr><tr><td>Lot 1 (triplicate)</td><td><span class="cs-good-text">1.9%, 2.1%, 2.3%</span></td><td>Passes; consistent with history</td></tr><tr><td>Lot 2 (triplicate)</td><td><span class="cs-good-text">2.0%, 2.2%, 2.4%</span></td><td>Passes; consistent with history</td></tr><tr><td>MW standard, controls, blank</td><td>Normal</td><td>Valid run</td></tr></tbody></table></div>
+          <p>With a normal standard, sensitivity returned to its usual range and both lots passed. Running the old standard on the same gel showed directly that it had weakened. That side-by-side comparison turned a likely explanation into a demonstrated cause.</p>
+          <p><strong>Supporting check (why it weakened):</strong> fresh standard aliquots put through repeated freeze-thaw cycles lost visible intensity after several cycles, consistent with the old vial’s thaw-and-refreeze history.</p>
+          <aside class="cs-tool" aria-label="Tool decision: Confirm the cause">
+            <p class="cs-tool-label">Tool decision &middot; Confirm the cause</p>
+            <dl><dt>Situation</dt><dd>A strong hypothesis, but no records to confirm the standard’s age.</dd><dt>Tool chosen</dt><dd>Hypothesis-driven retest under a pre-approved protocol, with a paired comparison (old vs. new standard on the same gel).</dd><dt>Why</dt><dd>Changes only the suspect and compares it directly with a known-good version.</dd><dt>Pros</dt><dd>One run answered the key questions; FDA-compliant, not testing into compliance.</dd><dt>Cons / limits</dt><dd>Retesting the same samples assumes they were stored properly (they were retained under controlled conditions).</dd><dt>Also considered</dt><dd>Resampling the lots. Not needed: the evidence pointed to the test, not the samples.</dd></dl>
+          </aside>
+          <h2>7. Method or input?</h2>
+          <p>The method lets the standard set the scale for the whole gel, so a weak standard can inflate every result. The team considered redesigning the method but decided against it. SDS-PAGE with densitometry is semi-quantitative by nature, the bracketing approach is common practice, and the method was validated. Revalidation would be costly and wouldn’t remove the reliance on a good standard.</p>
+          <p>Instead, the team chose to <strong>control the input</strong>: make sure the degraded standard is always within its expiry and in good condition, and make unusual sensitivity settings visible.</p>
+          <aside class="cs-tool" aria-label="Tool decision: Fix the method or the input?">
+            <p class="cs-tool-label">Tool decision &middot; Fix the method or the input?</p>
+            <dl><dt>Situation</dt><dd>The method is sensitive to the standard’s condition.</dd><dt>Tool chosen</dt><dd>Risk-based decision (ICH Q9 principles).</dd><dt>Why</dt><dd>Match the fix to the risk and the cost.</dd><dt>Pros</dt><dd>Fast, proportionate, no revalidation.</dd><dt>Cons / limits</dt><dd>The method’s dependence on the standard remains; controls must stay effective.</dd><dt>Also considered</dt><dd>Method redesign and revalidation. Rejected as disproportionate.</dd></dl>
+          </aside>
+          <h2>8. Root cause statement</h2>
+          <div class="table-wrap"><table class="cs-table"><tbody><tr><th scope="row">Trigger</th><td>The degraded standard had deteriorated (lost signal) after repeated freeze-thaw cycles over an untracked period of use.</td></tr><tr><th scope="row">Mechanism</th><td>Because sensitivity is set for the whole gel against the standard, the analyst raised it well above normal, magnifying faint signal in every sample lane.</td></tr><tr><th scope="row">Why it wasn’t prevented or detected</th><td>The standard’s preparation date wasn’t recorded, so the 30-day expiry couldn’t be enforced. There was no freeze-thaw limit, and no check on how high the sensitivity setting had to go.</td></tr></tbody></table></div>
+          <aside class="cs-tool" aria-label="Tool decision: Get to the system cause">
+            <p class="cs-tool-label">Tool decision &middot; Get to the system cause</p>
+            <dl><dt>Situation</dt><dd>The technical cause is confirmed.</dd><dt>Tool chosen</dt><dd>5 Whys.</dd><dt>Why</dt><dd>To find why the weak standard wasn’t prevented or noticed.</dd><dt>Pros</dt><dd>Led from “weak standard” to “expiry not traceable” and “no sensitivity check,” which the CAPA can fix.</dd><dt>Cons / limits</dt><dd>Only reliable after the technical cause is proven; used earlier, it can build on a guess.</dd><dt>Also considered</dt><dd>Fault tree analysis. More structure than this problem needed.</dd></dl>
+          </aside>
+          <h2>9. Disposition of the OOS results</h2>
+          <ul>
+            <li>QA approved invalidation of the original OOS results, with the protocol, gel images, and sensitivity records attached as the assignable cause.</li>
+            <li>Both lots were released on the passing retest results.</li>
+            <li><strong>Look-back:</strong> other gels run with the old standard were reviewed. A weak standard pushes results <strong>higher</strong>, never lower, so earlier passing results couldn’t have hidden a failure. No other lots were affected.</li>
+          </ul>
+
+          <h2>10. CAPA</h2>
+          <div class="table-wrap"><table class="cs-table"><thead><tr><th>Type</th><th>Action</th></tr></thead><tbody><tr><td>Correction</td><td>Old degraded standard discarded; fresh standard prepared.</td></tr><tr><td>Corrective action</td><td>SOP revised: the degraded standard’s preparation date is recorded on the results form, so the reviewer can confirm it is within its 30-day expiry.</td></tr><tr><td>Corrective action</td><td>Standard vials labeled with preparation date, expiry, and preparer.</td></tr><tr><td>Preventive action</td><td>Standard prepared as single-use aliquots, so no vial is thawed and refrozen.</td></tr><tr><td>Preventive action</td><td>The sensitivity setting is recorded for every gel, with a typical range. A setting outside that range triggers a check of the standard before results are approved.</td></tr><tr><td>Training</td><td>Analysts and reviewers trained on the revised SOP and on why a weak standard can inflate results.</td></tr></tbody></table></div>
+          <h2>11. Effectiveness check</h2>
+          <p>Criteria were set before closing: over the next <strong>30 days</strong> (one full standard life cycle) and at least 10 gels, no OOS results linked to the standard, the standard’s preparation date recorded on 100% of results forms, and every sensitivity setting within the typical range. All criteria were met, and the CAPA was closed as effective.</p>
+
+          <h2>12. The tools at a glance</h2>
+          <div class="table-wrap"><table class="cs-table"><thead><tr><th>Stage</th><th>Tool</th><th>Pros</th><th>Cons</th></tr></thead><tbody><tr><td>First look</td><td>Visual review vs. software</td><td>Fast; exposed the contradiction</td><td>Subjective</td></tr><tr><td>Define</td><td>Is / Is-Not</td><td>Showed a gel-wide effect with one odd control</td><td>Doesn’t prove cause</td></tr><tr><td>Run validity</td><td>System suitability review</td><td>Settled whether the OOS stood</td><td>Window criteria can pass with a weak standard</td></tr><tr><td>Mechanism</td><td>Method logic + audit trail</td><td>Explained every observation</td><td>Needs experimental confirmation</td></tr><tr><td>Narrow</td><td>Is / Is-Not on the lane pattern</td><td>Ruled out reagents instantly</td><td>Narrows, doesn’t prove</td></tr><tr><td>Why weak?</td><td>Records and SOP review</td><td>Found the untracked expiry</td><td>Records couldn’t answer the question</td></tr><tr><td>Confirm</td><td>Pre-approved retest, paired comparison</td><td>Demonstrated the cause in one run</td><td>Relies on well-stored retained samples</td></tr><tr><td>Decide</td><td>Risk-based judgment</td><td>Proportionate fix, no revalidation</td><td>Method dependence remains</td></tr><tr><td>System cause</td><td>5 Whys</td><td>Reached fixable system gaps</td><td>Only reliable after the cause is proven</td></tr></tbody></table></div>
+          <h2>Key takeaways</h2>
+          <ol>
+            <li><strong>When the picture and the number disagree, investigate the number.</strong> Normal-looking lanes were the first sign the problem was in the measurement.</li>
+            <li><strong>Know how your method scales.</strong> When one reference sets the sensitivity for the whole gel, a weak reference distorts every result.</li>
+            <li><strong>Let the lane pattern guide you.</strong> Gel-wide causes can’t explain a single weak lane.</li>
+            <li><strong>An expiry you can’t verify isn’t a control.</strong> Recording the preparation date turned a rule into something reviewers can check.</li>
+            <li><strong>Put the suspect next to a known-good version.</strong> The side-by-side standards made the cause visible.</li>
+            <li><strong>Fix what matters in proportion.</strong> Controlling the standard solved the problem without revalidating the method.</li>
+            <li><strong>Know which way the bias runs.</strong> A weak standard only inflates results, which kept the look-back simple.</li>
+          </ol>
+
+          <h2>Questions to think about</h2>
+          <ol>
+            <li>The run passed system suitability. Why couldn’t the OOS results be invalidated on that basis alone?</li>
+            <li>Why is re-analyzing the original scan at a lower sensitivity not an acceptable fix?</li>
+            <li>What made running the old and new standards on the same gel so much stronger than using only the new one?</li>
+            <li>Which reagents or standards in your lab have expiries that aren’t actually tracked?</li>
+            <li>When would it be worth redesigning or revalidating the method instead of controlling the standard?</li>
+          </ol>
+
+          <p>Related reading: <a href="case-study-oven-capa.html">The Oven That Only Failed Sometimes</a> and <a href="education-advanced-root-cause-analysis.html">Advanced Root Cause Analysis</a>.</p>
+
+          <p class="form-note">Kepner-Tregoe is a proprietary method of its owner, described here for educational purposes only. QStead Group is not affiliated with it. This illustrative case is for training purposes and is not a record of any actual investigation.</p>
+
+          <p>Working through an OOS or CAPA investigation that won’t close? <a href="index.html#contact">Get in touch</a>.</p>
+          <p><a href="case-studies.html">&larr; Back to Case Studies</a></p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <strong style="color:#fff">QStead Group</strong> &middot; Quality, Regulatory &amp; Compliance Consulting for Medical Device, Pharma and Biotech<br>
+        California &middot; On-site and remote
+        <p class="disclaimer">Consulting services are provided for informational and advisory purposes and do not constitute legal advice. Regulatory outcomes depend on the facts of each case.</p>
+        <p class="disclaimer">&copy; <span data-site="year"></span> QStead Group. All rights reserved.</p>
+      </div>
+      <div>
+        <ul class="foot-links">
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site.js?v=20260922"></script>
+</body>
+</html>

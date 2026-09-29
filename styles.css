@@ -249,3 +249,12 @@ section[id] { scroll-margin-top: 76px; }
 .cs-verdict .card h3 { margin-top: 0; font-size: 1.05rem; }
 .cs-verdict .card ul { padding-left: 1.1em; margin: 0; font-size: .92rem; }
 @media (min-width: 900px) { .prose:has(.cs-verdict) { max-width: 80ch; } }
+
+/* Tool decision boxes (added 2026-09-30) */
+.cs-tool { background: #f3f6f9; border: 1px solid #c9d6e3; border-top: 3px solid var(--navy); border-radius: 10px; padding: 14px 18px; margin: 1.2em 0 1.8em; font-size: .93rem; }
+.cs-tool-label { font-size: .74rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--teal-dark); margin: 0 0 10px; }
+.cs-tool dl { display: grid; grid-template-columns: 128px 1fr; gap: 6px 14px; margin: 0; }
+.cs-tool dt { font-weight: 700; color: var(--navy); }
+.cs-tool dd { margin: 0; }
+.cs-good-text { color: #1e6b3f; font-weight: 600; }
+@media (max-width: 560px) { .cs-tool dl { grid-template-columns: 1fr; gap: 2px; } .cs-tool dd { margin-bottom: 8px; } }
