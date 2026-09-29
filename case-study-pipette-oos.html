@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Case Study: Pipette OOS | QStead Group</title>
+  <meta name="description" content="A calibration CAPA case study: recurring as-found OOS after changing both pipette manufacturer and calibration lab, and how to separate confounded causes.">
+  <meta name="theme-color" content="#0f2a43">
+  <meta property="og:title" content="Case Study: Pipette OOS | QStead Group">
+  <meta property="og:description" content="A calibration CAPA case study: recurring as-found OOS after changing both pipette manufacturer and calibration lab, and how to separate confounded causes.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260929">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="container">
+      <a data-site="email" href="mailto:qsteadgroup@yahoo.com">qsteadgroup@yahoo.com</a>
+      <a data-site="phone" href="tel:+16197181853">(619) 718-1853</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="QStead Group home">
+        <img class="brand-mark" src="logo.png?v=20260922" alt="QStead Group">
+      </a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul id="menu">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#why">Why me</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="case-studies.html" aria-current="page">Case Studies</a></li>
+        <li class="has-dropdown">
+          <span class="dropdown-label">Learning Center</span>
+          <ul class="dropdown">
+            <li><a href="training.html">Training</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li class="has-subdropdown">
+              <a href="resources.html" class="subdropdown-label">Resources <span class="subdropdown-caret" aria-hidden="true">&lsaquo;</span></a>
+              <ul class="subdropdown">
+                <li><a href="resources-agencies.html">Global Regulatory Agencies &amp; Standards</a></li>
+                <li><a href="resources-legal-sources.html">U.S. Legal &amp; Legislative Sources</a></li>
+                <li><a href="resources-staying-current.html">Staying Current: Alerts &amp; Update Guide</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a class="btn btn-primary btn-sm" href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow" style="color:#7fd6d6">Case Study &middot; CAPA &amp; Investigations</p>
+        <h1>Pipette OOS: When Two Things Change at Once</h1>
+        <p>A look back at a real calibration CAPA: what the team did, what the evidence could and couldn&rsquo;t prove, and how a stronger investigation would have separated competing causes.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <article class="prose">
+          <p class="cs-note">This case is drawn from a real CAPA and rebuilt afterward from memory as a learning exercise. Manufacturer and laboratory names are anonymized. No numerical results are shown, because the original values weren&rsquo;t available and none have been invented. Throughout, <strong>remembered facts</strong>, <strong>hypotheses</strong>, and <strong>recommendations made in hindsight</strong> are kept separate.</p>
+
+          <h2>At a glance</h2>
+          <div class="table-wrap">
+            <table class="cs-table">
+              <tbody>
+                <tr><th scope="row">Problem</th><td>Recurring as-found out-of-specification (OOS) results on pipettes returning from scheduled calibration</td></tr>
+                <tr><th scope="row">Setting</th><td>QC Chemistry, Microbiology, and R&amp;D laboratories</td></tr>
+                <tr><th scope="row">Tools used</th><td>Change Analysis, Kepner-Tregoe Is / Is-Not</td></tr>
+                <tr><th scope="row">Historical actions</th><td>Calibration interval cut from 12 to 6 months; an overly tight specification later revised</td></tr>
+                <tr><th scope="row">Conclusion</th><td>Root cause <strong>not conclusively established</strong>. The actions reduced risk, but didn&rsquo;t prove why the failures happened.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>1. What was observed</h2>
+          <p>For years, the labs used pipettes from <strong>Manufacturer A</strong>, calibrated by external <strong>Lab A</strong>. The organization then bought a new population of pipettes from <strong>Manufacturer B</strong>, calibrated by external <strong>Lab B</strong>. Before long, individual Manufacturer B pipettes began coming back from scheduled calibration with as-found OOS results.</p>
+          <ul>
+            <li>The failures looked intermittent and random.</li>
+            <li>They showed up in Chemistry, Microbiology, and R&amp;D, with no concentration in one user, lab, application, or asset.</li>
+            <li>Manufacturer A pipettes weren&rsquo;t remembered as having a comparable pattern.</li>
+          </ul>
+          <div class="cs-callout">
+            <p class="cs-callout-title">Problem statement</p>
+            <p>Recurring as-found OOS results appeared in the Manufacturer B population after the organization changed <em>both</em> its pipette manufacturer and its external calibration lab. The evidence doesn&rsquo;t show which change, or what other variable, caused the pattern.</p>
+          </div>
+
+          <h2>2. What changed, and what didn&rsquo;t</h2>
+          <div class="table-wrap">
+            <table class="cs-table">
+              <thead><tr><th>Element</th><th>Before</th><th>After</th><th>What it means</th></tr></thead>
+              <tbody>
+                <tr><td>Pipette manufacturer</td><td>Manufacturer A</td><td>Manufacturer B</td><td>Changed. High-priority candidate.</td></tr>
+                <tr><td>Pipette population</td><td>Existing, older units</td><td>Newly purchased units</td><td>Changed along with the manufacturer, so age effects are mixed in too.</td></tr>
+                <tr><td>Calibration lab</td><td>Lab A</td><td>Lab B</td><td>Changed. High-priority measurement-system candidate.</td></tr>
+                <tr><td>Calibration interval</td><td>12 months</td><td>12 months (later 6)</td><td>No change at first.</td></tr>
+                <tr><td>Internal calibration procedure</td><td>Same</td><td>Same</td><td>Unchanged, but that doesn&rsquo;t prove Lab A and Lab B tested the same way.</td></tr>
+                <tr><td>Chemistry and Micro staff</td><td>Same people</td><td>Same people</td><td>Stable, which makes the operator a less likely cause.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>&ldquo;Our procedure stayed the same&rdquo; describes the <em>internal</em> process only. The two outside labs could still have differed in method, test points, replicates, conditioning, measurement uncertainty, decision rules, and how they reported as-found results.</p>
+
+          <h2>3. Change Analysis came first</h2>
+          <p>With a clear before-and-after transition, Change Analysis was the most useful first tool. It pointed straight at two changes: the <strong>manufacturer</strong> and the <strong>calibration lab</strong>. Users, labs, the internal procedure, and the original interval hadn&rsquo;t changed, so they ranked lower.</p>
+
+          <h2>4. Kepner-Tregoe Is / Is-Not came next</h2>
+          <p>Change Analysis asks what changed over time. Is / Is-Not asks what separates the problem from the non-problem <em>right now</em>.</p>
+          <div class="table-wrap">
+            <table class="cs-table">
+              <thead><tr><th></th><th>Is</th><th>Is not</th><th>So what?</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">What</th><td>Some Manufacturer B pipettes failed as-found</td><td>Not every unit; others passed</td><td>&ldquo;The brand is bad&rdquo; isn&rsquo;t supported</td></tr>
+                <tr><th scope="row">Where</th><td>Chemistry, Micro, R&amp;D</td><td>Not one lab</td><td>Location doesn&rsquo;t discriminate</td></tr>
+                <tr><th scope="row">Who</th><td>Many experienced users</td><td>Not one operator</td><td>Operator is lower priority, not ruled out</td></tr>
+                <tr><th scope="row">When</th><td>Found at scheduled calibration</td><td>No known start date</td><td>Annual checks can&rsquo;t show when drift began</td></tr>
+                <tr><th scope="row">Extent</th><td>Multiple assets</td><td>No cluster by asset ID</td><td>More detailed data needed</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Finding <em>no</em> strong distinction is itself a result. It sent the investigation back to the two simultaneous changes, and toward controlled testing instead of more brainstorming.</p>
+
+          <h2>5. The core problem: confounding</h2>
+          <p>History only offered two of four possible combinations:</p>
+          <div class="table-wrap">
+            <table class="cs-table cs-matrix">
+              <thead><tr><th></th><th>Lab A</th><th>Lab B</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Manufacturer A</th><td class="cs-good">Little or no OOS remembered</td><td class="cs-missing">Never tested</td></tr>
+                <tr><th scope="row">Manufacturer B</th><td class="cs-missing">Never tested</td><td class="cs-bad">Recurring OOS</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>With only the diagonal filled in, you can see that <em>something</em> changed with the transition, but you can&rsquo;t tell whether it was the pipettes, the lab, the combination, or something else. &ldquo;Manufacturer B caused it&rdquo; and &ldquo;Lab B caused it&rdquo; were both premature. A third possibility: both labs got similar numbers but applied different acceptance criteria, uncertainty rules, or reporting.</p>
+
+          <h2>6. Why the usual tools weren&rsquo;t the first choice</h2>
+          <ul>
+            <li><strong>Fishbone:</strong> would list the familiar categories without separating the two confounded changes.</li>
+            <li><strong>5 Whys:</strong> premature. Without a verified first link, it turns a plausible story into an unsupported chain.</li>
+            <li><strong>Fault tree:</strong> too elaborate for what was known about the failure mechanism.</li>
+            <li><strong>FMEA:</strong> good for future risk and controls, not for finding a past cause.</li>
+            <li><strong>Pareto and Shainin Red X&reg;:</strong> useful later, once failures are categorized or consistent good and bad units are available.</li>
+          </ul>
+          <p>The right order was Change Analysis and Is / Is-Not first, then stratifying and trending the data, then a controlled comparison to test the hypothesis, and only then 5 Whys to work upstream from a demonstrated mechanism.</p>
+
+          <h2>7. The experiment that would break the confounding</h2>
+          <p class="cs-tag">Recommendation made in hindsight, not an action taken at the time</p>
+          <p>When Lab B reports an as-found OOS, <strong>stop</strong>. Keep the pipette exactly as it is, with no adjustment, repair, or recalibration. Then send it to a qualified second lab for blinded as-found testing.</p>
+          <div class="table-wrap">
+            <table class="cs-table">
+              <thead><tr><th>If&hellip;</th><th>Then&hellip;</th></tr></thead>
+              <tbody>
+                <tr><td>Both labs get similar OOS values</td><td>Lab B alone is less likely. Look harder at the pipette or at criteria both labs share.</td></tr>
+                <tr><td>Lab B says OOS, the second lab gets clearly in-spec values</td><td>Look at the measurement system: method, transport, conditioning, the lab itself.</td></tr>
+                <tr><td>Numbers agree but pass/fail calls differ</td><td>The issue is acceptance criteria, uncertainty, guard bands, or decision rules.</td></tr>
+                <tr><td>Results sit right at the limit</td><td>A borderline system where uncertainty dominates. Neither lab is necessarily wrong.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>To make the comparison credible: compare raw values, uncertainty, test points, replicates, and conditions, not just PASS/OOS labels. Blind the second lab to the first result. Define transport, equilibration, and timing ahead of time. And use the same physical pipette as its own comparator. Retired Manufacturer A units aren&rsquo;t needed: the current population can isolate the lab variable on its own.</p>
+
+          <h2>8. The historical actions, credited fairly</h2>
+          <h3>Cutting the interval from 12 to 6 months</h3>
+          <p>A sensible interim control. It finds problems sooner, reduces how long a drifting pipette stays in use, and creates more data for trending. What it can&rsquo;t do is show when the problem started, prevent a pipette from going OOS, or identify the cause. It&rsquo;s best classified as <strong>containment or risk control</strong>, unless evidence shows the interval itself was the system gap.</p>
+          <h3>Revising an overly tight specification</h3>
+          <p>A scientifically justified revision, based on intended use, method needs, measurement uncertainty, and manufacturer performance, can be the right call. But it moves the pass/fail line without changing the pipette or the measurement.</p>
+          <div class="cs-callout">
+            <p class="cs-callout-title">The key distinction</p>
+            <p>Fewer OOS results after a spec change show an effect on <em>classification</em>. They don&rsquo;t explain why the original values occurred. &ldquo;Root cause: specification too tight&rdquo; only holds if the problem you defined was wrong classification, not pipette performance.</p>
+          </div>
+
+          <h2>9. The missing piece: historical Manufacturer A data</h2>
+          <p>The biggest open question is whether the old and new populations were ever judged on comparable terms. These records would change the picture:</p>
+          <ul>
+            <li>The acceptance criteria in effect during the Lab A years</li>
+            <li>Lab A certificates with raw as-found results, and whether as-found was always reported</li>
+            <li>Lab B criteria, certificates, test points, raw data, uncertainty, and decision rules</li>
+          </ul>
+          <p>If the old criteria were looser, part of the &ldquo;new&rdquo; problem may be a classification effect. If they were the same, &ldquo;spec too tight&rdquo; gets weaker as an explanation. If the records can&rsquo;t be found, the historical cause stays uncertain, and current controls can still be justified on risk.</p>
+
+          <h2>10. A stronger investigation, step by step</h2>
+          <ol>
+            <li><strong>Define the problem:</strong> the actual as-found failure and the affected population.</li>
+            <li><strong>Change Analysis:</strong> identify the manufacturer and lab changes.</li>
+            <li><strong>Is / Is-Not and stratification:</strong> compare failing and passing units; trend the raw history.</li>
+            <li><strong>Check comparability:</strong> methods, limits, uncertainty, and decision rules at both labs.</li>
+            <li><strong>Controlled confirmation:</strong> preserve as-found condition; paired interlaboratory testing.</li>
+            <li><strong>Mechanism, then upstream cause:</strong> only now apply 5 Whys or targeted tools.</li>
+          </ol>
+          <p>Supporting evidence: calibration data by asset (model, dates, time in service, as-found and as-left values, repair findings); repeat-failure patterns; physical findings such as seals, pistons, leaks, or damage; before-and-after data for both actions; and a written statement of residual uncertainty if no single cause is confirmed.</p>
+
+          <h2>11. Verdict</h2>
+          <div class="grid grid-3 cs-verdict">
+            <div class="card"><h3>Done well</h3><ul><li>Responded to recurring OOS instead of ignoring it</li><li>Shorter interval plausibly reduced risk</li><li>A justified spec revision can be sound science</li></ul></div>
+            <div class="card"><h3>Unresolved</h3><ul><li>No confirmed physical or measurement mechanism</li><li>Manufacturer and lab stayed confounded</li><li>Comparable historical data were missing</li></ul></div>
+            <div class="card"><h3>What would help</h3><ul><li>Recover comparable historical records</li><li>Trend current data and repair findings</li><li>Preserve as-found units for independent testing</li></ul></div>
+          </div>
+
+          <h2>Lessons for any investigation</h2>
+          <ul>
+            <li>Define the problem precisely. A classification problem and a performance problem are different problems.</li>
+            <li>When two factors change together, history alone can&rsquo;t separate them.</li>
+            <li>Use Change Analysis to find change points, Is / Is-Not to find distinctions, and controlled testing when observation can&rsquo;t break the tie.</li>
+            <li>Preserve as-found evidence before anyone repairs or adjusts it.</li>
+            <li>Treat an interval cut as risk control unless it&rsquo;s shown to fix a causal gap.</li>
+            <li>A spec revision can be right even when the physical root cause stays open.</li>
+            <li>&ldquo;Root cause not conclusively established&rdquo; is more defensible than a single unsupported explanation.</li>
+          </ul>
+
+          <p>Related reading: <a href="education-advanced-root-cause-analysis.html">Advanced Root Cause Analysis</a> and <a href="blog-capa-effectiveness.html">Five signs your CAPA system is producing paperwork, not improvement</a>.</p>
+
+          <p class="form-note">Kepner-Tregoe and Shainin/Red X&reg; are proprietary methods of their respective owners, described here for educational purposes only. QStead Group is not affiliated with them. This case study is a retrospective learning example, not a substitute for the original CAPA record.</p>
+
+          <p>Working through a calibration, OOS, or CAPA investigation that won&rsquo;t close? <a href="index.html#contact">Get in touch</a>.</p>
+          <p><a href="case-studies.html">&larr; Back to Case Studies</a></p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <strong style="color:#fff">QStead Group</strong> &middot; Quality, Regulatory &amp; Compliance Consulting for Medical Device, Pharma and Biotech<br>
+        California &middot; On-site and remote
+        <p class="disclaimer">Consulting services are provided for informational and advisory purposes and do not constitute legal advice. Regulatory outcomes depend on the facts of each case.</p>
+        <p class="disclaimer">&copy; <span data-site="year"></span> QStead Group. All rights reserved.</p>
+      </div>
+      <div>
+        <ul class="foot-links">
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site.js?v=20260922"></script>
+</body>
+</html>
