@@ -223,3 +223,29 @@ section[id] { scroll-margin-top: 76px; }
 .no-results { display: none; text-align: center; color: var(--muted); padding: 50px 0; }
 .agency-card.static-card:hover { transform: none; box-shadow: var(--shadow); }
 @media (max-width: 720px) { .quick-nav-wrap { top: 0; } }
+
+/* Case studies (added 2026-09-29) */
+.nav ul a, .dropdown-label { white-space: nowrap; }
+@media (min-width: 721px) and (max-width: 1040px) {
+  .nav ul { gap: 16px; }
+  .nav ul a, .dropdown-label { font-size: .88rem; }
+}
+.cs-note { background: var(--sand); border-left: 4px solid var(--teal); padding: 14px 18px; border-radius: 8px; font-size: .95rem; }
+.cs-callout { background: #eef7f7; border: 1px solid #cde9e9; border-radius: var(--radius); padding: 16px 20px; margin: 1.4em 0; }
+.cs-callout p { margin: 0; }
+.cs-callout .cs-callout-title { font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+.cs-tag { display: inline-block; background: #fff4de; color: #8a5a00; font-size: .78rem; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; padding: 4px 12px; border-radius: 999px; margin: 0 0 .6em; }
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1em 0 1.4em; border: 1px solid var(--line); border-radius: var(--radius); }
+.cs-table { width: 100%; border-collapse: collapse; font-size: .92rem; min-width: 520px; }
+.cs-table th, .cs-table td { padding: 10px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+.cs-table thead th { background: var(--navy); color: #fff; font-weight: 600; }
+.cs-table tbody th { color: var(--navy); font-weight: 700; background: var(--sand); white-space: nowrap; }
+.cs-table tr:last-child th, .cs-table tr:last-child td { border-bottom: none; }
+.cs-matrix td { text-align: center; font-weight: 600; }
+.cs-good { background: #e8f6ee; color: #1e6b3f; }
+.cs-bad { background: #fdeaea; color: #9b2c2c; }
+.cs-missing { background: #f3f4f6; color: var(--muted); font-style: italic; }
+.prose .cs-verdict { max-width: none; margin: 1em 0 1.4em; }
+.cs-verdict .card h3 { margin-top: 0; font-size: 1.05rem; }
+.cs-verdict .card ul { padding-left: 1.1em; margin: 0; font-size: .92rem; }
+@media (min-width: 900px) { .prose:has(.cs-verdict) { max-width: 80ch; } }
