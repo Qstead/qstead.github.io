@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recurring Low-Purity OOS With Multiple Causal Pathways | QStead Group</title>
+  <meta name="description" content="An advanced RCA case study: a recurring low-purity OOS with two causal pathways, why the same symptom does not mean the same cause, and which RCA tools fit each stage.">
+  <meta name="theme-color" content="#0f2a43">
+  <meta property="og:title" content="Recurring Low-Purity OOS With Multiple Causal Pathways | QStead Group">
+  <meta property="og:description" content="An advanced RCA case study: a recurring low-purity OOS with two causal pathways, why the same symptom does not mean the same cause, and which RCA tools fit each stage.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260930">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="container">
+      <a data-site="email" href="mailto:qsteadgroup@yahoo.com">qsteadgroup@yahoo.com</a>
+      <a data-site="phone" href="tel:+16197181853">(619) 718-1853</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="QStead Group home">
+        <img class="brand-mark" src="logo.png?v=20260922" alt="QStead Group">
+      </a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul id="menu">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#why">Why me</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="case-studies.html" aria-current="page">Case Studies</a></li>
+        <li class="has-dropdown">
+          <span class="dropdown-label">Learning Center</span>
+          <ul class="dropdown">
+            <li><a href="training.html">Training</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li class="has-subdropdown">
+              <a href="resources.html" class="subdropdown-label">Resources <span class="subdropdown-caret" aria-hidden="true">&lsaquo;</span></a>
+              <ul class="subdropdown">
+                <li><a href="resources-agencies.html">Global Regulatory Agencies &amp; Standards</a></li>
+                <li><a href="resources-legal-sources.html">U.S. Legal &amp; Legislative Sources</a></li>
+                <li><a href="resources-staying-current.html">Staying Current: Alerts &amp; Update Guide</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a class="btn btn-primary btn-sm" href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow" style="color:#7fd6d6">Advanced Case Study &middot; Scenario 10</p>
+        <h1>Recurring Low-Purity OOS With Multiple Causal Pathways</h1>
+        <p>The same failure does not necessarily mean the same root cause. An advanced RCA case for experienced QA, QC, and CAPA professionals.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <article class="prose">
+          <p class="cs-note"><strong>Illustrative teaching scenario.</strong> This is a hypothetical, composite scenario built for training. It does not describe any specific company, product, or event. All data are illustrative.</p>
+
+          <p>Scenario 10 is designed as an <strong>advanced RCA case</strong> because the investigation can reach a technically valid root cause, implement an apparently successful CAPA, and still encounter the same observable failure later for a completely different reason.</p>
+          <p>The central lesson is that <strong>the same failure phenotype does not necessarily mean the same root cause</strong>.</p>
+
+          <h2>At a glance</h2>
+          <div class="table-wrap"><table class="cs-table"><tbody><tr><th scope="row">Product</th><td>Recombinant protein therapeutic</td></tr><tr><th scope="row">Test</th><td>Validated QC HPLC purity method</td></tr><tr><th scope="row">Specification</th><td>Purity &ge; 95.0% (historically 97&ndash;99%)</td></tr><tr><th scope="row">Pathway A</th><td>Intermittent buffer-valve failure on the purification skid &rarr; abnormal separation &rarr; low purity</td></tr><tr><th scope="row">Pathway B</th><td>Excipient characteristic <em>combined with</em> extended intermediate hold &rarr; protein degradation &rarr; low purity</td></tr><tr><th scope="row">The hard part</th><td>Attributing historical OOS results when the evidence to tell the pathways apart was never collected</td></tr><tr><th scope="row">Who it’s for</th><td>Experienced investigators, CAPA owners, QA reviewers, and trainers</td></tr></tbody></table></div>
+          <h3>How to use this case</h3>
+          <p>Read it in stages. At each <em>Tool decision</em> box, pause and ask what you would do next and why. The <em>Advanced practice</em> boxes go beyond the basic scenario: evidence grading, competing hypotheses, failure fingerprints, cognitive traps, and how to write conclusions that hold up to regulatory scrutiny.</p>
+
+          <h2>1. The initial problem</h2>
+          <p>A biotech company manufactures a recombinant protein therapeutic. Manufacturing uses a <strong>purification chromatography system (purification skid)</strong>, while QC uses a validated HPLC method to measure final product purity.</p>
+          <p>The specification is <strong>purity &ge; 95.0%</strong>. Historically, batches typically produce approximately <strong>97&ndash;99% purity</strong>.</p>
+          <p>Then sporadic OOS results begin appearing:</p>
+          <p style="font-size:1.15rem"><strong>94.6% &rarr; 94.1% &rarr; 93.8% &rarr; 94.7%</strong></p>
+          <p>Most batches continue to pass. There is no immediately obvious pattern.</p>
+          <div class="cs-callout cs-adv"><p class="cs-callout-title">Advanced practice &middot; Before choosing a tool</p><ul><li><strong>Confirm the laboratory result first.</strong> Complete the Phase I laboratory investigation (FDA OOS guidance) to show the HPLC result is valid before investigating manufacturing.</li><li><strong>Characterize the impurity, not just the number.</strong> “Purity &lt; 95%” is a symptom. Is the extra impurity an aggregate, a fragment, a charge variant, or a process-related impurity? Different mechanisms leave different fingerprints. This one step becomes decisive later.</li><li><strong>Plot all batches, not just the failures.</strong> A run chart of purity with the 97&ndash;99% historical band shows whether the passing batches are drifting too.</li></ul></div>
+          <h2>2. Start simple</h2>
+          <p>The investigation does not immediately require an elaborate FTA or DOE. A reasonable approach is:</p>
+          <p><strong>Problem definition &rarr; data review &rarr; brainstorming &rarr; 5 Whys</strong></p>
+          <p>The investigators begin following one plausible causal chain:</p>
+          <ol>
+            <li><strong>Why was QC purity low?</strong> Because excessive impurity remained in the product.</li>
+            <li><strong>Why did excessive impurity remain?</strong> The manufacturing purification step did not achieve normal separation.</li>
+            <li><strong>Why was separation abnormal?</strong> The buffer conditions delivered to the column were inconsistent.</li>
+            <li><strong>Why were the buffer conditions inconsistent?</strong> An automated valve controlling buffer delivery was intermittently malfunctioning.</li>
+          </ol>
+          <p>This produces a very reasonable candidate root cause.</p>
+          <aside class="cs-tool" aria-label="Tool decision: Opening the investigation"><p class="cs-tool-label">Tool decision &middot; Opening the investigation</p><dl><dt>Situation</dt><dd>Sporadic OOS results, no obvious pattern, most batches passing.</dd><dt>Tool chosen</dt><dd>Problem definition, data review, brainstorming, then 5 Whys.</dd><dt>Why</dt><dd>Fast, proportionate, and easy to document. Most investigations should start simple.</dd><dt>Pros</dt><dd>Quickly produces a plausible, testable causal chain.</dd><dt>Cons / limits</dt><dd>5 Whys follows one chain at a time. It can’t reveal a second, parallel pathway, and each “why” can be an untested assumption.</dd><dt>Also considered</dt><dd>FTA or DOE up front. Premature: there is no defined mechanism yet to model or test.</dd></dl></aside>
+          <h2>3. Don’t confuse finding a defect with proving causation</h2>
+          <p>Engineering examines the valve and finds evidence of intermittent malfunction. That’s important, but:</p>
+          <div class="cs-callout"><p class="cs-callout-title">Key principle</p><p>A defective valve is not automatically proof that the valve caused these OOS results.</p></div>
+          <p>The investigation therefore goes further. Engineering performs controlled diagnostic testing of the removed valve and demonstrates that it intermittently sticks. Additional testing shows:</p>
+          <pre class="cs-pre">Valve sticks
+   ↓
+Incorrect buffer mixture
+   ↓
+Abnormal conductivity/composition
+   ↓
+Altered chromatography conditions</pre>
+          <p>Historical process data from affected batches are also consistent with these abnormalities. Development or engineering studies can then reproduce the abnormal buffer condition and demonstrate impaired purification corresponding to the observed impurity.</p>
+          <p>Now the causal argument becomes substantially stronger:</p>
+          <pre class="cs-pre">Valve malfunction
+   → Incorrect buffer composition
+   → Poor chromatographic separation
+   → Increased impurity
+   → QC HPLC purity &lt; 95%</pre>
+          <p>At this point, the valve is much more than something investigators happened to find broken. There is evidence supporting a <strong>causal mechanism</strong>.</p>
+          <div class="cs-callout cs-adv"><p class="cs-callout-title">Advanced practice &middot; The evidence ladder</p><p>Each rung is a stronger claim than the one below it. Write down which rung your evidence actually reaches.</p>
+          <div class="table-wrap"><table class="cs-table"><thead><tr><th>Rung</th><th>Claim</th><th>Evidence needed</th></tr></thead><tbody><tr><td>1</td><td>Something is wrong</td><td>The valve is found defective</td></tr><tr><td>2</td><td>It <em>can</em> cause the failure</td><td>Bench testing shows sticking produces the wrong buffer; scale-down studies reproduce the impurity</td></tr><tr><td>3</td><td>It <em>did</em> cause these failures</td><td>Batch records for the affected batches show the valve’s process signature (conductivity or composition deviations) at the right time</td></tr><tr><td>4</td><td>It caused <em>all</em> of them</td><td>Every OOS batch shows the signature, and no other mechanism fits</td></tr><tr><td>5</td><td>It is the <em>only</em> cause</td><td>Can’t be proven. It can only be supported by continued monitoring.</td></tr></tbody></table></div><p>Pathway A reached rung 3 for some batches. The trouble later in this case comes from quietly assuming rungs 4 and 5.</p></div>
+          <aside class="cs-tool" aria-label="Tool decision: Testing the valve hypothesis"><p class="cs-tool-label">Tool decision &middot; Testing the valve hypothesis</p><dl><dt>Situation</dt><dd>A defective valve has been found; its role in the OOS results is unproven.</dd><dt>Tool chosen</dt><dd>Component diagnostics, historical process-data review, and a scale-down reproduction study.</dd><dt>Why</dt><dd>Moves the valve from “found broken” to a demonstrated mechanism.</dd><dt>Pros</dt><dd>Engineering evidence, batch-specific data, and reproduction together make a strong causal case.</dd><dt>Cons / limits</dt><dd>Scale-down models must be shown to represent the full-scale process, or the reproduction proves less than it seems.</dd><dt>Also considered</dt><dd>Replacing the valve and watching results. Rejected as proof: improvement after a fix shows correlation, not mechanism.</dd></dl></aside>
+          <h2>4. CAPA</h2>
+          <p>The company replaces the valve and may also address the systemic reason it failed, for example preventive maintenance, inspection frequency, component-life limits, diagnostics, or process monitoring.</p>
+          <p>Subsequent batches pass. The effectiveness check might include:</p>
+          <p><strong>Valve performance + buffer conductivity/composition + relevant purification parameters + absence of valve-associated purity failures.</strong></p>
+          <p>Twenty or thirty consecutive batches might perform normally. The CAPA appears effective. And importantly: <strong>it may actually be effective.</strong></p>
+          <div class="cs-callout cs-adv"><p class="cs-callout-title">Advanced practice &middot; Design effectiveness checks around the mechanism</p><ul><li><strong>Measure the mechanism, not just the outcome.</strong> “No OOS for 30 batches” is an outcome. “Buffer conductivity within limits on every run, with no valve alarms” shows the specific cause stays controlled. That distinction is what saves you in Section 5.</li><li><strong>Use leading indicators.</strong> Valve response time, conductivity variability, and purity trending within spec warn before an OOS occurs.</li><li><strong>State the scope honestly.</strong> Write: “Effective for the valve-related mechanism under the conditions evaluated,” not “root cause eliminated.”</li><li><strong>Record the conditions covered.</strong> Note which excipient lots, hold times, and campaigns the effectiveness batches included. It tells future investigators what the check did and didn’t test.</li></ul></div>
+          <h2>5. Months later: another OOS</h2>
+          <p>Several months later: <strong>purity = 94.3%</strong>. Now there is a major reasoning trap. Someone might immediately conclude:</p>
+          <blockquote>“The valve CAPA failed.”</blockquote>
+          <p>Or even:</p>
+          <blockquote>“Apparently the valve wasn’t the original root cause.”</blockquote>
+          <p>Neither conclusion is justified yet. The correct question is:</p>
+          <div class="cs-callout"><p class="cs-callout-title">The correct question</p><p>Did the same causal mechanism recur?</p></div>
+          <p>Engineering evaluates the purification skid:</p>
+          <ul>
+            <li>The replacement valve is functioning correctly.</li>
+            <li>Buffer composition is correct.</li>
+            <li>Conductivity, flow, and pressure are normal.</li>
+            <li>The process signatures associated with the original valve malfunction are absent.</li>
+          </ul>
+          <p>That changes the investigation dramatically.</p>
+          <aside class="cs-tool" aria-label="Tool decision: Triage of the recurrence"><p class="cs-tool-label">Tool decision &middot; Triage of the recurrence</p><dl><dt>Situation</dt><dd>Same symptom, months after a CAPA that appeared effective.</dd><dt>Tool chosen</dt><dd>A “signature check”: test whether the known mechanism’s fingerprints are present (valve function, buffer composition, conductivity, flow, pressure).</dd><dt>Why</dt><dd>It answers the right question first: did the same mechanism recur?</dd><dt>Pros</dt><dd>Fast; prevents both false conclusions (“CAPA failed” and “original cause was wrong”).</dd><dt>Cons / limits</dt><dd>Only works if the first investigation defined the mechanism’s signature clearly, which is another reason to document it.</dd><dt>Also considered</dt><dd>Reopening the original CAPA immediately. Premature: recurrence of a symptom isn’t recurrence of a cause.</dd></dl></aside>
+          <h2>6. The investigation broadens</h2>
+          <p>Now investigators use more discriminating RCA techniques:</p>
+          <ul>
+            <li><strong>Kepner-Tregoe Is / Is-Not</strong></li>
+            <li><strong>Change Analysis</strong></li>
+            <li><strong>Batch stratification</strong></li>
+            <li><strong>Good-vs-bad comparison</strong></li>
+            <li><strong>Cause Mapping</strong></li>
+          </ul>
+          <p>Change Analysis identifies several things that changed over the relevant period. Two factors become particularly interesting:</p>
+          <ul>
+            <li><strong>A particular excipient characteristic / lot condition</strong></li>
+            <li><strong>Extended intermediate hold time</strong></li>
+          </ul>
+          <p>But there’s a complication. Some batches using that excipient pass. Some batches with extended hold times also pass. Therefore:</p>
+          <p><strong>Excipient alone &ne; sufficient</strong>, and <strong>extended hold alone &ne; sufficient</strong>.</p>
+          <p>Then investigators examine the combination:</p>
+          <div class="table-wrap"><table class="cs-table"><thead><tr><th>Excipient condition</th><th>Hold</th><th>Result</th></tr></thead><tbody><tr><td>Normal</td><td>Normal</td><td>Pass</td></tr><tr><td>Normal</td><td>Extended</td><td>Pass</td></tr><tr><td>Affected</td><td>Normal</td><td>Pass</td></tr><tr><td><strong>Affected</strong></td><td><strong>Extended</strong></td><td><strong class="cs-bad-text">OOS</strong></td></tr></tbody></table></div>
+          <p>Now there is evidence of an <strong>interaction</strong>. Controlled experiments reproduce the phenomenon. The combination causes increased protein degradation and ultimately:</p>
+          <pre class="cs-pre">Excipient characteristic + extended hold
+   → Protein degradation
+   → Increased impurity
+   → QC HPLC purity &lt; 95%</pre>
+          <aside class="cs-tool" aria-label="Tool decision: Finding the second pathway"><p class="cs-tool-label">Tool decision &middot; Finding the second pathway</p><dl><dt>Situation</dt><dd>The known mechanism is absent; the cause is unknown.</dd><dt>Tool chosen</dt><dd>Is / Is-Not and Change Analysis, then stratification of all batches (passing and failing) by excipient lot, hold time, skid, campaign, and date.</dd><dt>Why</dt><dd>Discriminating tools compare failing with passing batches instead of following one chain.</dd><dt>Pros</dt><dd>Found two candidate factors and, crucially, that neither was sufficient alone.</dd><dt>Cons / limits</dt><dd>One-factor-at-a-time views hide interactions. Each factor looked innocent because some batches with it passed.</dd><dt>Also considered</dt><dd>Another round of 5 Whys. Rejected: it would likely re-walk the valve chain.</dd></dl></aside>
+          <aside class="cs-tool" aria-label="Tool decision: Proving the interaction"><p class="cs-tool-label">Tool decision &middot; Proving the interaction</p><dl><dt>Situation</dt><dd>Stratified data suggest excipient × hold time matters only in combination.</dd><dt>Tool chosen</dt><dd>A designed experiment (2 × 2 factorial, replicated), at scale-down, testing both factors at both levels.</dd><dt>Why</dt><dd>Only a factorial design can show an interaction; changing one factor at a time can’t.</dd><dt>Pros</dt><dd>Demonstrates the combination is required, and quantifies how large the effect is.</dd><dt>Cons / limits</dt><dd>Needs retained excipient from affected lots and a representative scale-down model; replicates are essential because the effect sits near the specification limit.</dd><dt>Also considered</dt><dd>Statistical modeling of historical batch data (for example, logistic regression). Useful for generating the hypothesis, but observational data can’t prove causation.</dd></dl></aside>
+          <div class="cs-callout cs-adv"><p class="cs-callout-title">Advanced practice &middot; Make the interaction useful to manufacturing</p><ul><li><strong>Find the boundary.</strong> Extend the DOE to map how long a hold is safe for affected excipient lots. That turns a finding into a control limit.</li><li><strong>Identify the excipient attribute.</strong> Characterize what differs in affected lots (for example, a trace impurity, pH, peroxide level, or metal content) so it can be tested on incoming lots.</li><li><strong>Feed the control strategy.</strong> The attribute may be a critical material attribute and the hold time a critical process parameter (ICH Q8/Q11 thinking). Update specifications, supplier agreements, and batch record limits accordingly.</li></ul></div>
+          <h2>7. Now there are two demonstrated pathways</h2>
+          <p>The causal structure looks more like this:</p>
+          <pre class="cs-pre">PATHWAY A
+
+Intermittent valve failure
+        ↓
+Incorrect buffer composition
+        ↓
+Abnormal purification
+        ↓
+Increased impurity
+        ↓
+       OOS
+   Purity &lt;95%
+
+
+PATHWAY B
+
+Excipient characteristic ─────┐
+                              ├── Interaction
+Extended intermediate hold ───┘
+                                     ↓
+                              Protein degradation
+                                     ↓
+                              Increased impurity
+                                     ↓
+                                    OOS
+                                Purity &lt;95%</pre>
+          <p>That’s why <strong>5 Whys becomes limited</strong> in this scenario. It wasn’t necessarily wrong: it successfully followed <strong>Pathway A</strong>. The problem is that a linear 5 Whys chain doesn’t naturally reveal that <strong>Pathway B also exists</strong>.</p>
+          <div class="cs-callout cs-adv"><p class="cs-callout-title">Advanced practice &middot; The fault tree view</p><p>A fault tree shows the same structure with logic gates, which makes the “either pathway” and “both factors needed” relationships explicit:</p>
+          <pre class="cs-pre">TOP EVENT: QC HPLC purity &lt; 95%
+  └─ OR ─┬─ Pathway A: valve failure → wrong buffer → poor separation
+         ├─ Pathway B: AND ─┬─ excipient characteristic present
+         │                  └─ extended intermediate hold
+         └─ Unknown / not yet identified pathway</pre><p>Two practices worth adopting: always keep an <strong>“unknown pathway” branch</strong> on the tree, and <strong>keep the tree as a living document</strong> in the CAPA or knowledge-management system, updated when new evidence appears (ICH Q10 knowledge management).</p></div>
+          <h2>8. The historical problem</h2>
+          <p>Now QA asks: <strong>which mechanism caused the original OOS batches?</strong> And there may not be a complete answer. Suppose historical review finds:</p>
+          <div class="table-wrap"><table class="cs-table"><thead><tr><th>Historical OOS</th><th>Valve evidence</th><th>Excipient condition</th><th>Extended hold</th><th>Attribution</th></tr></thead><tbody><tr><td>#1</td><td>Strong</td><td>No</td><td>No</td><td>Valve strongly supported</td></tr><tr><td>#2</td><td>Possible</td><td>Yes</td><td>Yes</td><td>Ambiguous</td></tr><tr><td>#3</td><td>Unknown</td><td>Yes</td><td>Yes</td><td>Excipient pathway plausible</td></tr><tr><td>#4</td><td>Strong</td><td>No</td><td>No</td><td>Valve strongly supported</td></tr><tr><td>Later OOS</td><td>No</td><td>Yes</td><td>Yes</td><td>Excipient pathway strongly supported</td></tr></tbody></table></div>
+          <p>For #1 and #4, contemporaneous process data may strongly support the valve. But #2 and #3 are now questionable. Were they caused by the valve? The excipient/hold interaction? Both?</p>
+          <p>There may no longer be enough historical evidence to know. Samples may be unavailable. Relevant excipient characteristics may never have been measured. Process data may not have sufficient resolution.</p>
+          <p>The scientifically appropriate conclusion may therefore be:</p>
+          <div class="cs-callout"><p class="cs-callout-title">Honest conclusion</p><p>Historical causal attribution remains indeterminate for certain events.</p></div>
+          <p>That’s not necessarily a failure of QA. The evidence required to distinguish mechanisms may simply never have been collected because nobody knew the second mechanism existed.</p>
+          <div class="cs-callout cs-adv"><p class="cs-callout-title">Advanced practice &middot; Handling indeterminate attribution</p><ul><li><strong>Use defined attribution categories</strong> so conclusions are consistent: <em>demonstrated</em>, <em>strongly supported</em>, <em>plausible</em>, <em>indeterminate</em>. Record the evidence behind each.</li><li><strong>Look for a fingerprint before giving up.</strong> If retained samples of #2 and #3 exist, characterize their impurity profile (for example, SEC, CE-SDS, or LC-MS). A separation failure and a degradation pathway often leave different impurity species. Matching each batch’s profile to the Pathway A and Pathway B signatures may resolve the ambiguity.</li><li><strong>Weigh evidence explicitly.</strong> For each batch, ask how much more likely the observed data are under Pathway A than Pathway B. Evidence that fits both equally (such as “purity was low”) is worthless for attribution, however compelling it feels.</li><li><strong>Consider “both.”</strong> A marginal valve fault and a partial degradation effect could each contribute. The pathways aren’t necessarily exclusive.</li><li><strong>Document it and move on.</strong> Addend the original investigation records with the updated attribution and rationale, confirm the product-impact assessment still holds for released batches (21 CFR 211.192 extends investigations to other potentially affected batches), and make sure the CAPA covers both pathways, so the unresolved history doesn’t leave a gap in current control.</li></ul></div>
+          <h2>9. What each RCA tool contributes</h2>
+          <p>This scenario is particularly useful educationally because <strong>no single RCA tool solves the whole investigation</strong>.</p>
+          <div class="table-wrap"><table class="cs-table"><thead><tr><th>Tool</th><th>Role in Scenario 10</th></tr></thead><tbody><tr><td><strong>Brainstorming</strong></td><td>Quickly develops initial hypotheses</td></tr><tr><td><strong>5 Whys</strong></td><td>Follows the initial valve causal chain</td></tr><tr><td><strong>Change Analysis</strong></td><td>Identifies what changed before failures</td></tr><tr><td><strong>KT Is / Is-Not</strong></td><td>Identifies meaningful distinctions between passing and failing batches</td></tr><tr><td><strong>Stratification</strong></td><td>Looks for relationships among skid, lot, hold time, materials, dates, etc.</td></tr><tr><td><strong>Paired comparison</strong></td><td>Compares closely matched good and bad batches</td></tr><tr><td><strong>Cause Mapping</strong></td><td>Represents multiple simultaneous or independent causal pathways</td></tr><tr><td><strong>FTA</strong></td><td>Models combinations and alternative pathways capable of producing the top event</td></tr><tr><td><strong>DOE / controlled testing</strong></td><td>Tests the interaction between excipient condition and hold time</td></tr><tr><td><strong>CAPA effectiveness</strong></td><td>Determines whether the targeted causal mechanism remains controlled</td></tr></tbody></table></div>
+          <h3>Advanced toolkit: when to choose what</h3>
+          <p>For experienced investigators, these additional tools and practices strengthen a multi-pathway investigation. Each has a best moment and a real cost.</p>
+          <div class="table-wrap"><table class="cs-table"><thead><tr><th>Tool / practice</th><th>Best stage</th><th>Why choose it</th><th>Pros</th><th>Cons</th></tr></thead><tbody><tr><td>Impurity profiling (“failure fingerprint”)</td><td>Day one, and again at each recurrence</td><td>Tells mechanisms apart by what the impurity is, not just how much</td><td>Can separate pathways and resolve historical attribution from retained samples</td><td>Needs orthogonal methods and retained samples; costs time and money</td></tr><tr><td>Analysis of Competing Hypotheses (ACH)</td><td>After the first hypotheses form</td><td>Scores every piece of evidence against every hypothesis, focusing on what disproves</td><td>Counters anchoring and confirmation bias; auditable reasoning</td><td>Takes discipline; only as good as the hypothesis list</td></tr><tr><td>Evidence ladder / causal criteria</td><td>Before closing any conclusion</td><td>Makes explicit whether evidence shows “can cause,” “did cause,” or “only cause”</td><td>Prevents overclaiming in the CAPA and to regulators</td><td>Requires judgment; can feel slow under release pressure</td></tr><tr><td>Multivariate data analysis (e.g., PCA/PLS on batch data)</td><td>When many process variables are recorded</td><td>Finds patterns and combinations humans miss in large datasets</td><td>Handles many variables at once; can reveal interactions to test</td><td>Correlation only; needs clean data and statistical skill</td></tr><tr><td>Classification tree or logistic regression</td><td>Stratification stage</td><td>Shows which factor combinations predict OOS</td><td>Quickly surfaces candidate interactions</td><td>Few OOS events means overfitting risk; hypotheses, not proof</td></tr><tr><td>Scale-down model studies</td><td>Confirming a mechanism</td><td>Reproduces failure conditions safely</td><td>Allows “turn it on and off” testing</td><td>Model must be qualified as representative of full scale</td></tr><tr><td>Fault tree as a living document</td><td>After the first pathway is confirmed</td><td>Keeps OR/AND structure and an “unknown” branch visible</td><td>Makes future triage fast; supports knowledge management</td><td>Needs ownership and upkeep</td></tr><tr><td>Pre-mortem / red team review</td><td>Before CAPA closure</td><td>Asks “if this fails again, what would the cause be?”</td><td>Surfaces untested pathways cheaply</td><td>Can generate many speculative branches; needs prioritizing</td></tr><tr><td>SPC on purity and mechanism indicators</td><td>Ongoing, after CAPA</td><td>Detects drift before an OOS</td><td>Leading indicator; catches new pathways early</td><td>Needs defined limits and someone reviewing the charts</td></tr></tbody></table></div>
+          <h2>10. Advanced guidance</h2>
+          <h3>Cognitive traps in multi-pathway investigations</h3>
+          <div class="table-wrap"><table class="cs-table"><thead><tr><th>Trap</th><th>How it shows up here</th><th>Countermeasure</th></tr></thead><tbody><tr><td>Anchoring</td><td>Every new OOS gets read as “the valve again”</td><td>Run the signature check before assuming the known cause</td></tr><tr><td>Satisfaction of search</td><td>Investigators stop once one real defect is found</td><td>Ask: does this explain <em>every</em> OOS batch, and every passing batch?</td></tr><tr><td>Confirmation bias</td><td>Only evidence that fits the valve story is gathered</td><td>Seek disconfirming evidence; use competing hypotheses</td></tr><tr><td>Outcome-based judgment</td><td>“No OOS for 30 batches, so the root cause is gone”</td><td>State what the effectiveness check covered and what it didn’t</td></tr><tr><td>Hindsight bias</td><td>“The first team should have found the excipient issue”</td><td>Judge the first investigation by what was knowable then</td></tr></tbody></table></div>
+          <h3>New investigation or reopen the old CAPA?</h3>
+          <p>Open a <strong>new investigation</strong> for the recurrence, <strong>linked</strong> to the original. Only conclude the first CAPA was ineffective if the <em>same mechanism</em> recurred. Here it didn’t: the valve CAPA remained effective for its mechanism, and a second CAPA addresses Pathway B. Update the original record with a cross-reference and any revised historical attribution.</p>
+
+          <h3>A triage checklist for the next low-purity OOS</h3>
+          <ol>
+            <li>Confirm the laboratory result (Phase I).</li>
+            <li>Characterize the impurity profile and compare it with known pathway fingerprints.</li>
+            <li>Check Pathway A signatures: valve diagnostics, buffer conductivity and composition, flow, pressure.</li>
+            <li>Check Pathway B conditions: excipient lot attribute and intermediate hold time.</li>
+            <li>If neither pathway’s signature is present, treat it as a <strong>possible new pathway</strong> and open a full investigation.</li>
+          </ol>
+
+          <h3>Regulatory anchors</h3>
+          <ul>
+            <li><strong>FDA OOS guidance:</strong> Phase I laboratory investigation before manufacturing investigation; no invalidation without an assignable cause.</li>
+            <li><strong>21 CFR 211.192:</strong> investigations must be thorough, documented, and extended to other batches that may be affected.</li>
+            <li><strong>ICH Q10:</strong> CAPA effectiveness and knowledge management across the product lifecycle.</li>
+            <li><strong>ICH Q9(R1):</strong> depth of investigation and control proportionate to risk.</li>
+            <li><strong>ICH Q8 / Q11:</strong> material attributes and process parameters that affect quality belong in the control strategy.</li>
+          </ul>
+
+          <h2>The deepest lessons from Scenario 10</h2>
+          <ul>
+            <li><strong>Finding something wrong does not prove it caused the event.</strong></li>
+            <li><strong>Demonstrating that something can cause the failure does not automatically prove it caused every historical failure.</strong></li>
+            <li><strong>Correcting a cause does not prove it was the only cause.</strong></li>
+            <li><strong>Recurrence of the same symptom does not automatically mean the previous CAPA failed.</strong></li>
+            <li><strong>A successful effectiveness check demonstrates control over the conditions evaluated; it cannot guarantee that another unknown causal pathway will never produce the same outcome.</strong></li>
+          </ul>
+          <p>And perhaps the most important:</p>
+          <div class="cs-callout"><p class="cs-callout-title">The core principle</p><p>A good RCA is not about finding a convincing story. It is about building and testing a causal model that adequately explains the evidence.</p></div>
+          <p>That’s why Scenario 10 works so well as the <strong>capstone case</strong> for the 1&ndash;10 series. The investigators aren’t incompetent, the first RCA isn’t necessarily wrong, and the first CAPA isn’t necessarily ineffective. <strong>Their understanding of the causal system becomes more complete as new evidence appears.</strong></p>
+
+          <h2>Questions for experienced professionals</h2>
+          <ol>
+            <li>At which rung of the evidence ladder was the valve after Section 3? What would it have taken to reach the next rung for every OOS batch?</li>
+            <li>How would you rewrite the original CAPA closure statement so it stays accurate after Pathway B is discovered?</li>
+            <li>Which data, collected routinely from the start, would have made historical batches #2 and #3 attributable today?</li>
+            <li>Design the smallest experiment that would prove the excipient × hold interaction. How many runs, and why replicates?</li>
+            <li>Your site head asks, “Did the first CAPA fail?” Answer in two sentences an inspector would accept.</li>
+            <li>What other products or processes share the excipient or the hold step, and how would you scope the read-across?</li>
+          </ol>
+
+          <p>Related reading: <a href="case-study-oven-capa.html">The Oven That Only Failed Sometimes</a>, <a href="case-study-sds-page.html">The Standard That Failed the Samples</a>, and <a href="education-advanced-root-cause-analysis.html">Advanced Root Cause Analysis</a>.</p>
+
+          <p class="form-note">Kepner-Tregoe is a proprietary method of its owner, and Cause Mapping is associated with its developer; both are described here for educational purposes only. QStead Group is not affiliated with them. This scenario is hypothetical and for training purposes only.</p>
+
+          <p>Facing an investigation with more than one possible cause? <a href="index.html#contact">Get in touch</a>.</p>
+          <p><a href="case-studies.html">&larr; Back to Case Studies</a></p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <strong style="color:#fff">QStead Group</strong> &middot; Quality, Regulatory &amp; Compliance Consulting for Medical Device, Pharma and Biotech<br>
+        California &middot; On-site and remote
+        <p class="disclaimer">Consulting services are provided for informational and advisory purposes and do not constitute legal advice. Regulatory outcomes depend on the facts of each case.</p>
+        <p class="disclaimer">&copy; <span data-site="year"></span> QStead Group. All rights reserved.</p>
+      </div>
+      <div>
+        <ul class="foot-links">
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site.js?v=20260922"></script>
+</body>
+</html>

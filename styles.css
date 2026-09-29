@@ -258,3 +258,9 @@ section[id] { scroll-margin-top: 76px; }
 .cs-tool dd { margin: 0; }
 .cs-good-text { color: #1e6b3f; font-weight: 600; }
 @media (max-width: 560px) { .cs-tool dl { grid-template-columns: 1fr; gap: 2px; } .cs-tool dd { margin-bottom: 8px; } }
+.cs-pre { background: var(--sand); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; overflow-x: auto; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .84rem; line-height: 1.45; color: var(--ink); margin: 1em 0 1.3em; }
+.cs-adv { background: #fbf7ee; border-color: #ecdcb4; }
+.cs-adv .cs-callout-title { color: #8a5a00; }
+.cs-adv ul { margin: .4em 0 0; }
+.cs-adv .table-wrap { background: #fff; }
+.cs-bad-text { color: #9b2c2c; }
