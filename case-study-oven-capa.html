@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Oven That Only Failed Sometimes | QStead Group</title>
+  <meta name="description" content="An illustrative CAPA case study: tracing intermittent, severely low QC assay results to a hydrolysis oven using Kepner-Tregoe, Red X-style analysis, and extended temperature logging.">
+  <meta name="theme-color" content="#0f2a43">
+  <meta property="og:title" content="The Oven That Only Failed Sometimes | QStead Group">
+  <meta property="og:description" content="An illustrative CAPA case study: tracing intermittent, severely low QC assay results to a hydrolysis oven using Kepner-Tregoe, Red X-style analysis, and extended temperature logging.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260929">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="container">
+      <a data-site="email" href="mailto:qsteadgroup@yahoo.com">qsteadgroup@yahoo.com</a>
+      <a data-site="phone" href="tel:+16197181853">(619) 718-1853</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="QStead Group home">
+        <img class="brand-mark" src="logo.png?v=20260922" alt="QStead Group">
+      </a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul id="menu">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#why">Why me</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="case-studies.html" aria-current="page">Case Studies</a></li>
+        <li class="has-dropdown">
+          <span class="dropdown-label">Learning Center</span>
+          <ul class="dropdown">
+            <li><a href="training.html">Training</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li class="has-subdropdown">
+              <a href="resources.html" class="subdropdown-label">Resources <span class="subdropdown-caret" aria-hidden="true">&lsaquo;</span></a>
+              <ul class="subdropdown">
+                <li><a href="resources-agencies.html">Global Regulatory Agencies &amp; Standards</a></li>
+                <li><a href="resources-legal-sources.html">U.S. Legal &amp; Legislative Sources</a></li>
+                <li><a href="resources-staying-current.html">Staying Current: Alerts &amp; Update Guide</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a class="btn btn-primary btn-sm" href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow" style="color:#7fd6d6">Case Study &middot; CAPA &amp; Laboratory Investigations</p>
+        <h1>The Oven That Only Failed Sometimes</h1>
+        <p>A model OOS investigation using Kepner-Tregoe and Shainin Red X&reg;-style analysis: how a QC lab traced intermittent, severely low assay results to a hydrolysis oven, proved it, and closed the CAPA the right way.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <article class="prose">
+          <p class="cs-note"><strong>Illustrative teaching case.</strong> This is a composite case inspired by real laboratory investigation experience. Product, method, equipment, and numerical details have been changed, and the investigation is presented as a model of good practice. It does not describe any specific company, product, or event. All data are illustrative.</p>
+
+          <h2>At a glance</h2>
+          <div class="table-wrap">
+            <table class="cs-table">
+              <tbody>
+                <tr><th scope="row">Product / test</th><td>Protein-content assay on a finished product: acid hydrolysis, pre-column derivatization, and UPLC</td></tr>
+                <tr><th scope="row">Specification</th><td>4.0&ndash;6.0% (process target 5.0%)</td></tr>
+                <tr><th scope="row">The problem</th><td>Several lots tested at about 3.3%, roughly a third below target and far below anything in the product&rsquo;s history</td></tr>
+                <tr><th scope="row">Root cause</th><td>Intermittent heating failure in the older of two qualified hydrolysis ovens, causing incomplete hydrolysis during some overnight cycles</td></tr>
+                <tr><th scope="row">How it was proven</th><td>Red X&reg;-style contrast, an oven swap, extended multi-probe temperature logging, and a side-by-side confirmation run</td></tr>
+                <tr><th scope="row">Outcome</th><td>Assignable cause documented; OOS invalidated with QA approval; oven retired; CAPA effective</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>1. The signal</h2>
+          <p>A QC lab tests every lot of a finished product for protein content. The method has four stages: samples are hydrolyzed overnight in 6&nbsp;N hydrochloric acid in sealed vacuum vessels, the freed amino acids are derivatized so the detector can see them, the samples are run on UPLC, and the result is calculated against a reference standard.</p>
+          <p>For years, results sat comfortably near the 5.0% target. Then several lots came back at about <strong>3.3%</strong>: out of specification (OOS) and far lower than anything in the product&rsquo;s history. Failures appeared in some runs but not others.</p>
+
+          <h2>2. First actions: contain and define</h2>
+          <ul>
+            <li><strong>Contain.</strong> Affected lots were placed on hold, and QA was notified the same day, as the OOS procedure requires.</li>
+            <li><strong>Preserve evidence.</strong> Retained samples, prepared solutions, and hydrolysates from the failing runs were kept, labeled, and stored, not discarded.</li>
+            <li><strong>Define the problem precisely.</strong> The team wrote a problem statement and a Kepner-Tregoe Is / Is-Not before testing anything, including the questions it could not yet answer.</li>
+          </ul>
+          <div class="table-wrap">
+            <table class="cs-table">
+              <thead><tr><th></th><th>Is</th><th>Is not</th><th>What it suggests</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">What</th><td>Results ~3.3% on some lots</td><td>Not every lot; the same sample can pass on repeat</td><td>The test failed, not necessarily the product</td></tr>
+                <tr><th scope="row">Where</th><td>All routine runs use one hydrolysis oven (Oven A)</td><td>Unknown: the second qualified oven (Oven B) has not been used for this test</td><td>Location can&rsquo;t be judged yet; a comparison is needed</td></tr>
+                <tr><th scope="row">When</th><td>Intermittent, recent</td><td>Not a steady, every-run failure</td><td>Something that switches on and off</td></tr>
+                <tr><th scope="row">Who</th><td>Several analysts</td><td>Not tied to one person</td><td>Operator unlikely</td></tr>
+                <tr><th scope="row">Extent</th><td>About one-third low</td><td>Not a small bias</td><td>A step that can lose a lot of signal</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>3. Phase I laboratory investigation</h2>
+          <h3>Size of the miss</h3>
+          <p>A result one-third low narrows the search. Balance and pipetting errors of that size would be obvious in recorded weights and routine checks, and a bad reference standard would shift every sample in a run, not just some. The team reviewed the records for the failing runs, confirmed that weights, pipette verifications, system suitability, and standard results were all normal, and documented why these suspects were ruled out.</p>
+          <h3>Map the method into families</h3>
+          <div class="table-wrap">
+            <table class="cs-table">
+              <thead><tr><th>Step</th><th>Possible causes of low results</th></tr></thead>
+              <tbody>
+                <tr><td>Weighing</td><td>Balance error, sample non-homogeneity</td></tr>
+                <tr><td>Acid hydrolysis (overnight, sealed vacuum vessel)</td><td>Temperature too low or uneven, vessel seal failure, time too short</td></tr>
+                <tr><td>Reconstitution and mixing</td><td>Incomplete redissolution, mixing time not defined in the SOP</td></tr>
+                <tr><td>Derivatization</td><td>Reagent lot, reaction time, pH</td></tr>
+                <tr><td>UPLC and calculation</td><td>Injection, integration, standard</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Retained material from a failing sample was then split to isolate the stage. <strong>Re-injecting</strong> the original hydrolysate gave the same low value (UPLC ruled out), and <strong>re-derivatizing</strong> it also stayed low (derivatization ruled out). The signal was already missing <strong>before</strong> derivatization, which pointed to hydrolysis.</p>
+          <div class="cs-callout">
+            <p class="cs-callout-title">Phase I conclusion</p>
+            <p>No laboratory error in weighing, derivatization, chromatography, or calculation. The evidence points to the hydrolysis stage. The case was escalated to a Phase II investigation led by QA, with a short documented manufacturing review that found no process deviations for the affected lots.</p>
+          </div>
+
+          <h2>4. Testing the suspects under protocol</h2>
+          <p>Because each test cycle takes one to two days, the team wrote a single QA-approved protocol that tested several hypotheses in parallel, with a control sample of known value in every run and every oven position.</p>
+          <div class="table-wrap">
+            <table class="cs-table">
+              <thead><tr><th>Hypothesis</th><th>Test</th><th>Result</th><th>Conclusion</th></tr></thead>
+              <tbody>
+                <tr><td>Derivatization reagent lot</td><td>Fresh reagent lot in runs where failures occurred</td><td>Failures continued</td><td>Ruled out</td></tr>
+                <tr><td>Vessel seal / vacuum</td><td>Seal checks; deliberately loosened lid on control vessels</td><td>Controls normal</td><td>Not a primary cause</td></tr>
+                <tr><td>Mixing after hydrolysis</td><td>Short vs. extended mixing times</td><td>No difference</td><td>Not a cause; time defined in SOP anyway</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>With the common suspects eliminated and the hydrolysis stage implicated, the team switched to a Red X&reg;-style approach: instead of testing causes one by one, let the contrast between the best and worst results point to the cause.</p>
+
+          <h2>5. Finding the contrast: the Red X&reg; approach</h2>
+          <p>Shainin&rsquo;s Red X&reg; method starts from the result and works backward (&ldquo;Y to X&rdquo; thinking). It assumes one dominant cause, the Red X, explains most of the difference between good and bad outcomes, and finds it by comparing extremes and eliminating whole families of causes at a time.</p>
+          <h3>Define the Green Y</h3>
+          <p>The Green Y is the measurable result being investigated. Here it was the <strong>protein result (%) for a homogenized control sample of known value</strong>, run in every hydrolysis batch. Using a control instead of production lots removes product variation from the comparison.</p>
+          <h3>Check the measurement first</h3>
+          <p>Before hunting for a cause, the team confirmed the measurement could see the problem clearly (the idea behind Shainin&rsquo;s Isoplot). Repeat injections of the same hydrolysate varied by about &plusmn;0.05%, while good and bad runs differed by about 1.7%. Measurement noise was tiny compared with the effect, so the difference was real.</p>
+          <h3>Best of Best vs. Worst of Worst</h3>
+          <p>The team pulled the three best and three worst control results from recent runs and compared everything about them.</p>
+          <div class="table-wrap">
+            <table class="cs-table">
+              <thead><tr><th>Run</th><th>Control result</th><th>Oven</th><th>Analyst</th><th>Reagent lot</th></tr></thead>
+              <tbody>
+                <tr><td>BOB 1</td><td class="cs-good">5.03%</td><td>A</td><td>1</td><td>R1</td></tr>
+                <tr><td>BOB 2</td><td class="cs-good">5.01%</td><td>A</td><td>2</td><td>R2</td></tr>
+                <tr><td>BOB 3</td><td class="cs-good">4.99%</td><td>A</td><td>3</td><td>R2</td></tr>
+                <tr><td>WOW 1</td><td class="cs-bad">3.28%</td><td>A</td><td>2</td><td>R1</td></tr>
+                <tr><td>WOW 2</td><td class="cs-bad">3.31%</td><td>A</td><td>3</td><td>R2</td></tr>
+                <tr><td>WOW 3</td><td class="cs-bad">3.36%</td><td>A</td><td>1</td><td>R2</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Analysts and reagent lots appear on <strong>both</strong> sides, so neither separates good from bad. Every run used Oven A, so the oven couldn&rsquo;t be judged yet. The difference had to be something that varied <strong>between cycles</strong> of the same equipment.</p>
+          <h3>Multi-vari: where does the variation live?</h3>
+          <div class="table-wrap">
+            <table class="cs-table">
+              <thead><tr><th>Family of variation</th><th>What the data showed</th><th>Verdict</th></tr></thead>
+              <tbody>
+                <tr><td>Within a run (position to position)</td><td>Normal runs: controls within &plusmn;0.03% across positions. Failing runs: lower-rear positions lowest.</td><td>Secondary; appears only in bad cycles</td></tr>
+                <tr><td>Run to run (cycle to cycle)</td><td>About 5.0% in some runs, about 3.3% in others</td><td><strong>Dominant family</strong></td></tr>
+                <tr><td>Lot to lot</td><td>The same lot gave both low and normal results</td><td>Eliminated</td></tr>
+                <tr><td>Analyst to analyst</td><td>Every analyst had both good and bad runs</td><td>Eliminated</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>The variation lived <strong>cycle to cycle</strong> inside the hydrolysis step. That narrowed the search to whatever changes from one overnight cycle to the next: the oven&rsquo;s behavior.</p>
+          <h3>The swap</h3>
+          <p>The lab had a second qualified oven (Oven B) that had never been used for this test. Keeping everything else the same (samples, reagents, analysts, method), the team hydrolyzed the next three batches in Oven B. <strong>All three passed.</strong> Changing one variable made the failures disappear, the equivalent of Shainin&rsquo;s component swap. But three passes are evidence, not proof.</p>
+
+          <h2>6. Proving the cause</h2>
+          <h3>Extended temperature logging</h3>
+          <p>Oven A had passed its routine calibration, a single-point check in an empty chamber. That check couldn&rsquo;t catch a problem that only happened sometimes, somewhere in the chamber, during a long run. So the team placed a <strong>calibrated multi-probe data logger</strong> (front, center, back; upper and lower shelves) in Oven A with a <strong>full sample load</strong>, and logged <strong>five overnight cycles</strong>.</p>
+          <div class="table-wrap">
+            <table class="cs-table">
+              <thead><tr><th>Cycle</th><th>Temperature behavior</th><th>Control sample</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>Stable at setpoint all night</td><td class="cs-good">Normal</td></tr>
+                <tr><td>2</td><td>Dropped 8&ndash;10&nbsp;&deg;C below setpoint for about 3 hours; worst at lower-rear positions</td><td class="cs-bad">Low</td></tr>
+                <tr><td>3</td><td>Stable at setpoint</td><td class="cs-good">Normal</td></tr>
+                <tr><td>4</td><td>Repeated drops of 6&ndash;9&nbsp;&deg;C over about 2 hours</td><td class="cs-bad">Low</td></tr>
+                <tr><td>5</td><td>Stable at setpoint</td><td class="cs-good">Normal</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>The pattern matched exactly: <strong>low results occurred only in cycles with temperature drops</strong>, and the oven&rsquo;s own display never showed the dips. The heating was intermittently cutting out overnight. This also explained the multi-vari finding: when the heating failed, the lower-rear positions cooled the most.</p>
+          <h3>Confirmation: &ldquo;take the Red X&reg; to court&rdquo;</h3>
+          <p>The final test turned the failure on and off. Matched aliquots of the control were split between Oven B (the better condition, &ldquo;B&rdquo;) and Oven A (the current condition, &ldquo;C&rdquo;) in the same overnight run, with the logger running in Oven A. Oven A logged a temperature drop that night.</p>
+          <div class="table-wrap">
+            <table class="cs-table">
+              <thead><tr><th>Condition</th><th>Aliquot 1</th><th>Aliquot 2</th><th>Aliquot 3</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">B: Oven B (stable)</th><td class="cs-good">5.01%</td><td class="cs-good">4.98%</td><td class="cs-good">5.03%</td></tr>
+                <tr><th scope="row">C: Oven A (logged drop)</th><td class="cs-bad">3.31%</td><td class="cs-bad">3.45%</td><td class="cs-bad">3.28%</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Every B result beat every C result. With three of each, complete separation like this has only about a 1-in-20 chance of happening by luck, which is roughly 95% confidence.</p>
+          <div class="cs-callout">
+            <p class="cs-callout-title">Cause demonstrated</p>
+            <p>Intermittent loss of heating in Oven A during overnight hydrolysis leads to incomplete hydrolysis and low results. This was confirmed by the best-vs-worst contrast, the oven swap, temperature logging correlated with results, and a side-by-side B vs. C run.</p>
+          </div>
+
+          <h2>7. Root cause statement</h2>
+          <div class="table-wrap">
+            <table class="cs-table">
+              <tbody>
+                <tr><th scope="row">Technical cause</th><td>Intermittent heating failure in Oven A caused temperature drops during overnight hydrolysis, leading to incomplete hydrolysis and low protein results.</td></tr>
+                <tr><th scope="row">Why it wasn&rsquo;t detected</th><td>Routine calibration was a single-point, empty-chamber check that couldn&rsquo;t detect intermittent or position-specific behavior during long cycles, and the oven had no independent temperature monitoring or alarm.</td></tr>
+                <tr><th scope="row">Contributing factor</th><td>The SOP didn&rsquo;t define the mixing time after hydrolysis, leaving room for run-to-run variation (not causal here, but corrected).</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>The cause statement stops at what was demonstrated. A component-level teardown of Oven A (heater, relay, or controller) was judged unnecessary: the oven was being removed from service, so knowing which part failed wouldn&rsquo;t change any decision. This risk-based choice was documented in the investigation.</p>
+
+          <h2>8. Disposition of the OOS results</h2>
+          <ul>
+            <li>With an assignable cause demonstrated, QA approved invalidation of the original OOS results, with the evidence attached to the investigation record.</li>
+            <li>Affected lots were retested per the OOS procedure in qualified Oven B, passed, and were released by QA.</li>
+            <li><strong>Look-back:</strong> results for lots hydrolyzed in Oven A over the relevant period were reviewed for possible low bias. No other lots were affected.</li>
+          </ul>
+
+          <h2>9. CAPA</h2>
+          <div class="table-wrap">
+            <table class="cs-table">
+              <thead><tr><th>Type</th><th>Action</th></tr></thead>
+              <tbody>
+                <tr><td>Correction</td><td>Oven A removed from GMP use and retired; hydrolysis moved to qualified Oven B.</td></tr>
+                <tr><td>Corrective action</td><td>Continuous temperature logging with low-temperature alarms added for hydrolysis ovens; each run&rsquo;s temperature record reviewed before results are approved.</td></tr>
+                <tr><td>Corrective action</td><td>Oven qualification upgraded to include loaded, multi-position, full-cycle mapping; calibration program updated to include periodic extended checks.</td></tr>
+                <tr><td>Preventive action</td><td>SOP revised through change control to define mixing time and to require a control sample of known value in every hydrolysis run.</td></tr>
+                <tr><td>Preventive action</td><td>Read-across: other long-cycle heated equipment (ovens, heating blocks, incubators) assessed for the same detection gap.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>10. Effectiveness check</h2>
+          <p>Criteria were set <strong>before</strong> closing: over the next 30 hydrolysis runs, no OOS results attributable to hydrolysis, control samples within their limits in every run, and no unreviewed temperature excursions. All criteria were met, and the CAPA was closed as effective.</p>
+
+          <h2>11. How the tools worked together</h2>
+          <div class="table-wrap">
+            <table class="cs-table">
+              <thead><tr><th>Stage</th><th>Tool</th><th>What it contributed</th><th>Its limit</th></tr></thead>
+              <tbody>
+                <tr><td>Define</td><td>Kepner-Tregoe Is / Is-Not</td><td>Separated a test failure from a product failure; exposed the open question about the oven</td><td>Organizes facts; doesn&rsquo;t prove cause</td></tr>
+                <tr><td>Narrow</td><td>Process map, size-of-the-miss analysis</td><td>Grouped suspects into families; eliminated steps that couldn&rsquo;t cause a one-third loss</td><td>Needs good knowledge of the method</td></tr>
+                <tr><td>Isolate</td><td>Split testing of retained material</td><td>Pinned the loss to the hydrolysis stage</td><td>Requires preserved evidence</td></tr>
+                <tr><td>Test</td><td>Hypothesis protocol with controls</td><td>Eliminated reagent, seal, and mixing suspects in parallel</td><td>Weak when the failure isn&rsquo;t active</td></tr>
+                <tr><td>Contrast</td><td>Red X&reg;: Green Y, BOB/WOW, multi-vari</td><td>Showed the variation lived cycle to cycle inside hydrolysis</td><td>Needs a measurable result and real extremes</td></tr>
+                <tr><td>Swap</td><td>Oven A vs. Oven B</td><td>Changed one variable and made the failure disappear</td><td>Evidence, not yet proof</td></tr>
+                <tr><td>Prove</td><td>Data logging, B vs. C run</td><td>Showed the mechanism and turned the failure on and off</td><td>Needs enough cycles to catch the fault</td></tr>
+                <tr><td>Close</td><td>CAPA with effectiveness criteria</td><td>Fixed the cause and the detection gap, and verified it worked</td><td>Only as good as the criteria set up front</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>When Red X&reg; fits, and when it doesn&rsquo;t</h3>
+          <p><strong>Good fit (as here):</strong> a measurable result, clear good and bad extremes, one dominant cause, and the ability to compare or swap conditions. Intermittent equipment problems are a classic example.</p>
+          <p><strong>Poor fit:</strong> many small causes of similar size, failures too rare to find extremes, evidence that no longer exists, or causes that can&rsquo;t safely be recreated (sterility, for example). Red X&reg; also finds the <strong>technical</strong> cause, not why the quality system missed it. That&rsquo;s why this investigation paired it with a look at calibration and monitoring before closing the CAPA.</p>
+
+          <h2>Key takeaways</h2>
+          <ol>
+            <li><strong>Let the size of the miss guide the search.</strong> A one-third loss rules out many small-error suspects immediately.</li>
+            <li><strong>A passing retest is not an explanation.</strong> The investigation continued until the cause was shown.</li>
+            <li><strong>Split the method into families</strong> and use retained material to find where the signal is lost.</li>
+            <li><strong>Compare the extremes.</strong> Best-vs-worst runs and a multi-vari study pointed to cycle-to-cycle variation faster than testing suspects one at a time.</li>
+            <li><strong>Change one thing at a time.</strong> The oven swap worked because nothing else changed.</li>
+            <li><strong>Snapshots can&rsquo;t catch intermittent problems.</strong> Extended, loaded, multi-position logging found what a single calibration point missed.</li>
+            <li><strong>Prove it by turning it on and off.</strong> A side-by-side B vs. C run turned a strong suspect into a demonstrated cause.</li>
+            <li><strong>Fix the detection gap, not just the equipment.</strong> The CAPA addressed why the problem wasn&rsquo;t caught, so it won&rsquo;t recur elsewhere.</li>
+            <li><strong>Match investigation depth to the decisions that depend on it.</strong> Proving the oven was the cause mattered; finding the failed component did not.</li>
+          </ol>
+
+          <h2>Questions to think about</h2>
+          <ol>
+            <li>The same sample failed once and passed on repeat. Why isn&rsquo;t that enough to invalidate the first result?</li>
+            <li>Why use a control sample, rather than production lots, as the Green Y?</li>
+            <li>In the best-vs-worst table, every run used Oven A. What could and couldn&rsquo;t that comparison tell the team?</li>
+            <li>The oven passed its routine calibration. What would you change in a calibration program to catch problems like this?</li>
+            <li>Each test cycle took one to two days. How would you design experiments to reach a conclusion faster?</li>
+            <li>When is it reasonable to stop investigating before identifying the failed component?</li>
+          </ol>
+
+          <p>Related reading: <a href="education-advanced-root-cause-analysis.html">Advanced Root Cause Analysis</a> and <a href="case-study-pipette-oos.html">Pipette OOS: When Two Things Change at Once</a>.</p>
+
+          <p class="form-note">Red X&reg; is a registered trademark of Shainin, and Isoplot and the other Shainin tools named here are part of its proprietary methodology. Kepner-Tregoe is a proprietary method of its owner. These methods are described here for educational purposes only; QStead Group is not affiliated with either. This illustrative case is for training purposes and is not a record of any actual investigation.</p>
+
+          <p>Working through an OOS or CAPA investigation that won&rsquo;t close? <a href="index.html#contact">Get in touch</a>.</p>
+          <p><a href="case-studies.html">&larr; Back to Case Studies</a></p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <strong style="color:#fff">QStead Group</strong> &middot; Quality, Regulatory &amp; Compliance Consulting for Medical Device, Pharma and Biotech<br>
+        California &middot; On-site and remote
+        <p class="disclaimer">Consulting services are provided for informational and advisory purposes and do not constitute legal advice. Regulatory outcomes depend on the facts of each case.</p>
+        <p class="disclaimer">&copy; <span data-site="year"></span> QStead Group. All rights reserved.</p>
+      </div>
+      <div>
+        <ul class="foot-links">
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site.js?v=20260922"></script>
+</body>
+</html>
