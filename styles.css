@@ -264,3 +264,7 @@ section[id] { scroll-margin-top: 76px; }
 .cs-adv ul { margin: .4em 0 0; }
 .cs-adv .table-wrap { background: #fff; }
 .cs-bad-text { color: #9b2c2c; }
+.soon-group { font-size: 1.25rem; margin: 36px 0 16px; }
+.soon-group:first-child { margin-top: 0; }
+.soon-card h3 { margin: 6px 0 8px; font-size: 1.08rem; }
+.soon-card p:last-child { color: var(--muted); margin: 0; }
