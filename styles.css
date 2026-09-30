@@ -268,3 +268,10 @@ section[id] { scroll-margin-top: 76px; }
 .soon-group:first-child { margin-top: 0; }
 .soon-card h3 { margin: 6px 0 8px; font-size: 1.08rem; }
 .soon-card p:last-child { color: var(--muted); margin: 0; }
+
+/* Flyout fix (2026-09-30): hover bridge only on the flyout side, plus a short close delay,
+   so items below Resources in the Learning Center menu stay clickable */
+.has-subdropdown .subdropdown { display: block; visibility: hidden; opacity: 0; transition: opacity .12s ease, visibility 0s linear .35s; }
+.has-subdropdown:hover .subdropdown, .has-subdropdown:focus-within .subdropdown { visibility: visible; opacity: 1; transition-delay: 0s; }
+.has-subdropdown:hover::before, .has-subdropdown:focus-within::before { top: 0; bottom: auto; left: auto; right: 100%; width: 28px; height: 100%; }
+@media (max-width: 720px) { .has-subdropdown .subdropdown { visibility: visible; opacity: 1; transition: none; } }
